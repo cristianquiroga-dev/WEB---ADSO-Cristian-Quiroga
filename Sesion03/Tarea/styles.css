@@ -1,0 +1,65 @@
+/* 
+  === RESPUESTAS TEÓRICAS (Punto 5) ===
+  - ¿Por qué es mejor un solo styles.css que poner los estilos en cada página?
+    Es mejor porque centraliza y organiza el diseño de todo el sitio web. Cualquier cambio 
+    que hagamos se actualiza automáticamente en todas las páginas sin tener que modificar 
+    archivo por archivo, manteniendo el código HTML limpio y ordenado.
+
+  - Si un h2 tiene una regla de etiqueta y otra de clase con colores distintos, ¿cuál gana y por qué?
+    Gana la regla de la clase. En CSS, las clases tienen una especificidad (peso) mayor que 
+    los selectores de etiquetas simples, por lo que el navegador le da prioridad al color de la clase.
+*/
+
+/* Paleta de colores del negocio (Barbería: Tonos oscuros y acentos dorados/rojos clásicos) */
+
+/* General: para mantener un diseño limpio y legible */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(214, 208, 208);
+    color: rgb(30, 30, 30);
+    margin: 0 50px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-style: italic;
+    color: rgb(106, 22, 22); /* Color principal del negocio */
+}
+
+/* Punto 3: Selector descendiente para los enlaces del menú (nav a) */
+nav a {
+    color: rgb(106, 22, 22);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Punto 2: Estilos para la tabla (sin border="1") */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid rgb(100, 100, 100); /* Bordes personalizados */
+    padding: 12px; /* Espacio dentro de las celdas */
+    text-align: center;
+}
+
+th {
+    background-color: rgb(106, 22, 22); /* Color de fondo para los encabezados th */
+    color: white;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+}
