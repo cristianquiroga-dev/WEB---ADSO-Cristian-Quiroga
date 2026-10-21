@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Formulario de inscripción</h1>
+        <form action="#" id="FormInscripcion">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50">
+                    <small id="error-nombre" class="error"></small>
+                </div>
+                <div class="campo">
+                    <label for="documento">Documento</label>
+                    <input type="number" id="documento" name="documento" required pattern="[0-9]{5,9}" title="Solo se admiten numeros de 6 a 10 digitos">
+                    <small id="error-documento" class="error"></small>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Télefono</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="3[0-9]{9}" title="10 dígitos que empiecen por 3">
+                    <small id="error-telefono" class="error"></small>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <small id="error-correo" class="error"></small>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Programa</legend>
+                <div class="campo">
+                    <label for="programa">Seleccione un curso</label>
+                    <select name="tipo" id="tipo" required>
+                        <option value="">Elije una opcion</option>
+                        <option value="adso">Analisis y desarrollo de software - ADSO</option>
+                        <option value="ciber">Ciberseguridad</option>
+                        <option value="admin">Administracion de empresas</option>
+                    </select>
+                    <small id="error-programa" class="error"></small>
+
+                </div>
+
+                <fieldset class="grupo">
+                    <legend>Jornada</legend>
+                    <label for="mañana" class="opcion">
+                        <input type="radio" name="jornada" id="mañana" value="mañana" checked>Mañana
+                    </label>
+                    <label for="tarde" class="opcion">
+                        <input type="radio" name="jornada" id="tarde" value="tarde">Tarde
+                    </label>
+                    <label for="noche" class="opcion">
+                        <input type="radio" name="jornada" id="noche" value="noche">Noche
+                    </label>
+                    <small id="error-jornada" class="error"></small>
+                </fieldset>
+
+                <fieldset class="grupo">
+                    <legend>Terminos</legend>
+                    <label for="" class="opcion">
+                        <input type="checkbox" name="terminos" id="" value="aceptacion" required> Acepta términos y condiciones
+                    </label>
+                </fieldset>
+
+            </fieldset>
+            <button type="submit" class="boton">Enviar formulario</button>
+        </form>
+    </main>
+</body>
+</html>
