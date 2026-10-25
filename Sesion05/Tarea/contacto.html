@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Sto Domingo - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/barber.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Barber Sto Domingo - Contacto</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="producto.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        
+    </header>
+    <main>
+        <section> 
+            <center>
+            <h2>Contactanos</h2>
+            <table>
+                <caption>Enlaces</caption>
+                <thead>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/Mapa.png" alt="Instagram" width="50"></td>
+                        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.4407180143701!2d-75.54432300377562!3d6.2948624309902135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442fc2bc6a667d%3A0x36ce50486eaa7dcb!2sExclusive%20style!5e0!3m2!1ses-419!2sco!4v1791408487325!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/horario.png" alt="Facebook" width="50"></td>
+                        <td>Domingo a Domingo de 10 AM a 8PM</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/Wpp.png" alt="Wpp" width="50"></td>
+                        <td><a href="https://wa.me/573224568765" target="_blank">Whatsapp Bot</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            </center>
+        </section> 
+
+<!-- Punto 4: Comentario explicativo del atributo name -->
+<!-- 
+  El atributo 'name' sirve para identificar y etiquetar el dato ingresado en cada campo 
+  al momento de enviar el formulario al servidor o procesarlo con un script backend (ej. name="nombre" envía nombre=ValorIngresado). 
+-->
+
+        <h2>Formulario de contacto</h2>
+        <fieldset>
+        <form action="formularioContacto">
+            <legend>Datos de contacto</legend>
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" placeholder="Ingresa tu nombre">
+                <small id="error-nombre" class="error"></small>
+            </div>
+            <div class="campo">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" required placeholder="Ingresa tu correo">
+                <small id="error-correo" class="error"></small>
+            </div>
+            <div class="campo">
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}" title="10 dígitos que empiecen por 3" placeholder="Ingresa tu numero">
+                <small id="error-celular" class="error"></small>
+            </div>
+            <div class="campo">
+                <label for="motivo">Seleccione el motivo</label>
+                <select name="motivo" id="motivo" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="pedido">Pedido</option>
+                    <option value="pregunta">Pregunta</option>
+                    <option value="queja">Queja</option>
+                </select>
+                <small id="error-motivo" class="error"></small>
+            </div>
+            <div class="campo">
+                <label for="comentario">Ingresa detalles del motivo</label>
+                <textarea name="comentario" id="comentario" rows="7" required></textarea>
+            </div>
+            <button type="submit" class="boton">Enviar</button>
+        </form>
+        </fieldset>
+    </main>
+    <footer>
+        <p>Barber Sto Domingo - Calle 80 # 45-12</p>
+        <p><img src="img/Wpp.png" alt="whatsapp" width="40">Contactanos por whatsapp</p>
+    </footer>
+</body>
+</html>
