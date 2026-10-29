@@ -1,20 +1,3 @@
-:root {
-    --color-primario: #2b1810;
-    --color-secundario: #6f4e37;
-    --color-acento: #d4a373;
-    --color-fondo: #f7f3ee;
-    --color-blanco: #ffffff;
-    --color-texto: #1f2933;
-    --color-texto-suave: #52606d;
-    --color-precio: #8b3a1e;
-    --color-agotado: #c62828;
-    --color-borde: #e4e7eb;
-    --fuente-principal: "Poppins", Arial, sans-serif;
-    --sombra-tarjeta: 0 4px 16px rgba(0, 0, 0, 0.12);
-    --sombra-hover: 0 8px 24px rgba(0, 0, 0, 0.18);
-    --radio-borde: 12px;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,210 +5,162 @@
 }
 
 body {
-    font-family: var(--fuente-principal);
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #f4efe9;
+    color: #333333;
 }
 
+/* 1. Encabezado con logo a un lado y menú al otro */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2.5rem;
-    background-color: var(--color-primario);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    background-color: #2b1810;
+    padding: 15px 40px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 10px;
 }
 
 .logo-img {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
 }
 
 .logo-texto {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-acento);
-    letter-spacing: 0.5px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-nav,
-.menu {
+nav {
     display: flex;
-    gap: 1.5rem;
-    align-items: center;
+    gap: 20px;
 }
 
-nav a,
-.menu a {
-    color: #f7e6d2;
+nav a {
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: color 0.2s ease;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-nav a:hover,
-.menu a:hover {
-    color: var(--color-acento);
+nav a:hover {
+    text-decoration: underline;
 }
 
+/* Sección de la vitrina */
 .seccion-vitrina {
-    max-width: 1100px;
-    margin: 2.5rem auto;
-    padding: 0 1.25rem;
-}
-
-.encabezado-vitrina {
+    padding: 40px 20px;
     text-align: center;
-    margin-bottom: 2rem;
 }
 
-.encabezado-vitrina h2 {
-    font-size: 2rem;
-    color: var(--color-primario);
-    margin-bottom: 0.5rem;
+.seccion-vitrina h2 {
+    color: #2b1810;
+    font-size: 28px;
+    margin-bottom: 8px;
 }
 
-.encabezado-vitrina p {
-    color: var(--color-texto-suave);
-    font-size: 1.05rem;
+.seccion-vitrina p {
+    color: #666666;
+    margin-bottom: 30px;
 }
 
+/* 2. Vitrina con flex-wrap y gap */
 .vitrina {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 24px;
     justify-content: center;
 }
 
 .producto {
-    flex: 1 1 280px;
-    max-width: 330px;
-    background-color: var(--color-blanco);
-    border: 1px solid var(--color-borde);
-    border-radius: var(--radio-borde);
-    overflow: hidden;
-    box-shadow: var(--sombra-tarjeta);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 260px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
 }
 
-.producto:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--sombra-hover);
-}
-
-.imagen-contenedor {
-    position: relative;
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-}
-
+/* 3. Tarjeta con imagen (object-fit: cover), categoría, nombre y precio */
 .producto img {
     width: 100%;
-    height: 220px;
+    height: 180px;
     object-fit: cover;
-    display: block;
-}
-
-.info-producto {
-    padding: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    flex-grow: 1;
+    border-radius: 6px;
 }
 
 .categoria {
-    align-self: flex-start;
-    background-color: #f1e3d3;
-    color: var(--color-secundario);
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 0.25rem 0.65rem;
-    border-radius: 999px;
-    letter-spacing: 0.5px;
+    display: inline-block;
+    background-color: #e8ded4;
+    color: #2b1810;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 10px;
 }
 
-.nombre {
-    font-size: 1.25rem;
-    color: var(--color-primario);
-    margin: 0;
+.producto h3 {
+    font-size: 18px;
+    color: #2b1810;
+    margin: 8px 0;
 }
 
 .precio {
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: var(--color-precio);
-    margin-top: auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8b3a1e;
 }
 
+/* 4. Producto agotado y etiqueta visible */
 .producto.agotado {
-    opacity: 0.75;
-}
-
-.producto.agotado .imagen-contenedor img {
-    filter: grayscale(60%);
+    opacity: 0.6;
 }
 
 .etiqueta-agotado {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    background-color: var(--color-agotado);
-    color: var(--color-blanco);
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 6px 14px;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
-    letter-spacing: 1px;
-    z-index: 2;
+    display: inline-block;
+    background-color: #c62828;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
+/* 5. Pie con 3 columnas hechas con Flexbox */
 footer {
-    background-color: var(--color-primario);
-    color: #f7e6d2;
-    padding: 2.5rem 2rem;
-    margin-top: 3.5rem;
+    background-color: #2b1810;
+    color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 50px;
 }
 
 .columnas-pie {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
+    gap: 20px;
 }
 
 .columna {
-    flex: 1 1 280px;
+    width: 250px;
+    text-align: left;
 }
 
 .columna h3 {
-    color: var(--color-acento);
-    font-size: 1.2rem;
-    margin-bottom: 0.85rem;
-    padding-bottom: 0.35rem;
-    border-bottom: 2px solid var(--color-secundario);
-    display: inline-block;
+    color: #f7e6d2;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .columna p {
-    color: #ded0c3;
-    font-size: 0.95rem;
+    font-size: 14px;
     line-height: 1.6;
-    margin-bottom: 0.5rem;
+    margin-bottom: 6px;
 }

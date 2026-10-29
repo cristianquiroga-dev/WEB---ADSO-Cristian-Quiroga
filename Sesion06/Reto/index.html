@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aroma Café - Vitrina de Productos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
 </head>
@@ -14,90 +11,63 @@
 
     <header>
         <div class="logo">
-            <img src="img/logo.svg" alt="Logo Aroma Café" class="logo-img">
+            <img src="img/logo.svg" alt="Logo" class="logo-img">
             <span class="logo-texto">Aroma Café</span>
         </div>
-        <nav class="menu">
+        <nav>
             <a href="#inicio">Inicio</a>
             <a href="#vitrina">Vitrina</a>
-            <a href="#nosotros">Nosotros</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
     <main id="inicio">
         <section class="seccion-vitrina" id="vitrina">
-            <div class="encabezado-vitrina">
-                <h2>Nuestra Vitrina de Especialidad</h2>
-                <p>Granos seleccionados y repostería artesanal preparados al momento</p>
-            </div>
+            <h2>Nuestra Vitrina</h2>
+            <p>Productos frescos y café de especialidad</p>
 
             <div class="vitrina">
                 <article class="producto">
-                    <div class="imagen-contenedor">
-                        <img src="img/espresso.jpg" alt="Café Espresso Doble">
-                    </div>
-                    <div class="info-producto">
-                        <span class="categoria">Café Caliente</span>
-                        <h3 class="nombre">Espresso Doble</h3>
-                        <p class="precio">$7.500</p>
-                    </div>
+                    <img src="img/espresso.jpg" alt="Café Espresso">
+                    <span class="categoria">Café Caliente</span>
+                    <h3>Espresso Doble</h3>
+                    <p class="precio">$7.500</p>
                 </article>
 
                 <article class="producto">
-                    <div class="imagen-contenedor">
-                        <img src="img/cappuccino.jpg" alt="Cappuccino Vainilla">
-                    </div>
-                    <div class="info-producto">
-                        <span class="categoria">Café Caliente</span>
-                        <h3 class="nombre">Cappuccino Vainilla</h3>
-                        <p class="precio">$9.800</p>
-                    </div>
+                    <img src="img/cappuccino.jpg" alt="Cappuccino Vainilla">
+                    <span class="categoria">Café Caliente</span>
+                    <h3>Cappuccino Vainilla</h3>
+                    <p class="precio">$9.800</p>
                 </article>
 
                 <article class="producto">
-                    <div class="imagen-contenedor">
-                        <img src="img/coldbrew.jpg" alt="Cold Brew Caramelo">
-                    </div>
-                    <div class="info-producto">
-                        <span class="categoria">Bebidas Frías</span>
-                        <h3 class="nombre">Cold Brew Caramelo</h3>
-                        <p class="precio">$11.000</p>
-                    </div>
+                    <img src="img/coldbrew.jpg" alt="Cold Brew Caramelo">
+                    <span class="categoria">Bebidas Frías</span>
+                    <h3>Cold Brew Caramelo</h3>
+                    <p class="precio">$11.000</p>
                 </article>
 
                 <article class="producto">
-                    <div class="imagen-contenedor">
-                        <img src="img/frappe.jpg" alt="Frappé Moka">
-                    </div>
-                    <div class="info-producto">
-                        <span class="categoria">Bebidas Frías</span>
-                        <h3 class="nombre">Frappé Moka</h3>
-                        <p class="precio">$12.500</p>
-                    </div>
+                    <img src="img/frappe.jpg" alt="Frappé Moka">
+                    <span class="categoria">Bebidas Frías</span>
+                    <h3>Frappé Moka</h3>
+                    <p class="precio">$12.500</p>
                 </article>
 
                 <article class="producto agotado">
-                    <div class="imagen-contenedor">
-                        <span class="etiqueta-agotado">Agotado</span>
-                        <img src="img/cheesecake.jpg" alt="Cheesecake de Frutos Rojos">
-                    </div>
-                    <div class="info-producto">
-                        <span class="categoria">Repostería</span>
-                        <h3 class="nombre">Cheesecake de Frutos Rojos</h3>
-                        <p class="precio">$13.000</p>
-                    </div>
+                    <span class="etiqueta-agotado">Agotado</span>
+                    <img src="img/cheesecake.jpg" alt="Cheesecake">
+                    <span class="categoria">Repostería</span>
+                    <h3>Cheesecake</h3>
+                    <p class="precio">$13.000</p>
                 </article>
 
                 <article class="producto">
-                    <div class="imagen-contenedor">
-                        <img src="img/croissant.jpg" alt="Croissant Artesanal">
-                    </div>
-                    <div class="info-producto">
-                        <span class="categoria">Repostería</span>
-                        <h3 class="nombre">Croissant Artesanal</h3>
-                        <p class="precio">$8.500</p>
-                    </div>
+                    <img src="img/croissant.jpg" alt="Croissant Artesanal">
+                    <span class="categoria">Repostería</span>
+                    <h3>Croissant Artesanal</h3>
+                    <p class="precio">$8.500</p>
                 </article>
             </div>
         </section>
@@ -107,19 +77,17 @@
         <div class="columnas-pie">
             <div class="columna">
                 <h3>Aroma Café</h3>
-                <p>Pasión por el café de especialidad y la panadería tradicional en cada detalle. Visítanos y vive una experiencia única.</p>
+                <p>Pasión por el café de especialidad y la buena repostería en cada detalle.</p>
             </div>
             <div class="columna">
-                <h3>Horario de Atención</h3>
+                <h3>Horario</h3>
                 <p>Lunes a Viernes: 7:00 AM - 8:30 PM</p>
                 <p>Sábados y Domingos: 8:00 AM - 9:00 PM</p>
-                <p>Festivos: 9:00 AM - 7:00 PM</p>
             </div>
             <div class="columna">
-                <h3>Contacto & Ubicación</h3>
-                <p>📍 Calle 45 # 18-24, Zona Centro</p>
+                <h3>Contacto</h3>
+                <p>📍 Calle 45 # 18-24</p>
                 <p>📞 Tel: +57 (604) 444 8920</p>
-                <p>📱 WhatsApp: +57 310 987 6543</p>
             </div>
         </div>
     </footer>
