@@ -1,0 +1,158 @@
+/* 
+  === RESPUESTAS TEÓRICAS ===
+  - ¿Por qué un solo styles.css?:
+    Permite modificar los estilos de todo el sitio desde un solo archivo.
+
+  - ¿Gana la etiqueta o la clase?:
+    Gana la clase porque tiene mayor prioridad (especificidad).
+
+  - Punto 3: Diferencia entre justify-content y align-items:
+    - justify-content: Alinea horizontalmente (en el eje principal).
+    - align-items: Alinea verticalmente (en el eje secundario).
+*/
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(214, 208, 208);
+    color: rgb(30, 30, 30);
+    margin: 0 50px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-style: italic;
+    color: rgb(106, 22, 22);
+}
+
+/* Menú con Flexbox: nombre a un lado y enlaces al otro */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Enlaces del menú */
+nav a {
+    color: rgb(106, 22, 22);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid rgb(100, 100, 100);
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(106, 22, 22);
+    color: white;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+}
+
+fieldset {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 500px;
+    margin: 0 auto;
+    padding: 0.7rem 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.616);
+    border-radius: 12px;
+}
+
+input {
+    margin: 0.2rem;
+    padding: 0.7rem 1.5rem;
+    width: 50%;
+    border-radius: 5px;
+    border-color: rgb(106, 22, 22);
+    font-size: 15px;
+}
+
+select {
+    padding: 0.7rem;
+    width: 50%;
+    border-radius: 16px;
+    border-color: black;
+    font-size: 15px;
+}
+
+label {
+    padding: 1.5rem;
+    font-style: inherit;
+    text-align: left;
+    font-weight: 700;
+    font-style: oblique;
+}
+
+textarea {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.boton {
+    width: 20%;
+    margin: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    background-color: rgb(106, 22, 22);
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: rgb(126, 121, 121);
+}
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+    border-color: #c62828;
+    background-color: #fff5f5;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.boton:focus {
+    outline: 3px solid rgb(106, 22, 22);
+    outline-offset: 2px;
+    background-color: #fcf8f8;
+}
+
+.error {
+    display: block;
+    min-height: 1.2em;
+    color: #c62828;
+    font-size: 0.85rem;
+}
