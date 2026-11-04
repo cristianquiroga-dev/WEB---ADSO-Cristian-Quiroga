@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Café - Tablero de Control</title>
+    <!-- Tipografía Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+    <!-- Contenedor principal con CSS Grid y grid-template-areas -->
+    <div class="app">
+
+        <!-- 1. Encabezado del tablero -->
+        <header class="app-encabezado">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logo de Aroma Café" class="logo-img">
+                <span class="logo-texto">Aroma Café · Tablero de Control</span>
+            </div>
+            <div class="usuario">
+                <span>👤 Administrador</span>
+            </div>
+        </header>
+
+        <!-- 2. Menú lateral de navegación -->
+        <nav class="app-menu">
+            <ul>
+                <li><a href="#" class="activo">📊 Resumen</a></li>
+                <li><a href="#">☕ Productos</a></li>
+                <li><a href="#">📦 Inventario</a></li>
+                <li><a href="#">🧾 Ventas</a></li>
+                <li><a href="#">👥 Clientes</a></li>
+            </ul>
+        </nav>
+
+        <!-- 3. Contenido principal -->
+        <main class="app-contenido">
+            <h1>Resumen del Negocio</h1>
+
+            <!-- 4 Indicadores en cuadrícula con repeat(auto-fit, minmax()) -->
+            <section class="indicadores">
+                <article class="indicador">
+                    <p class="titulo">Ventas de hoy</p>
+                    <p class="valor">$845.000</p>
+                </article>
+                <article class="indicador">
+                    <p class="titulo">Pedidos atendidos</p>
+                    <p class="valor">128</p>
+                </article>
+                <article class="indicador">
+                    <p class="titulo">Productos agotados</p>
+                    <p class="valor">2</p>
+                </article>
+                <article class="indicador">
+                    <p class="titulo">Clientes nuevos</p>
+                    <p class="valor">19</p>
+                </article>
+            </section>
+
+            <!-- Galería de productos más vendidos en Grid con figure y figcaption -->
+            <section class="seccion-galeria">
+                <h2>Productos más vendidos</h2>
+                
+                <div class="galeria">
+                    <!-- Elemento destacado que ocupa 2 columnas (y 2 filas) -->
+                    <figure class="destacado">
+                        <img src="img/espresso.jpg" alt="Café Espresso Doble">
+                        <figcaption>⭐ Espresso Doble · 142 vendidos</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/cappuccino.jpg" alt="Cappuccino Vainilla">
+                        <figcaption>Cappuccino Vainilla · 98 vendidos</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/coldbrew.jpg" alt="Cold Brew Caramelo">
+                        <figcaption>Cold Brew Caramelo · 76 vendidos</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/frappe.jpg" alt="Frappé Moka">
+                        <figcaption>Frappé Moka · 64 vendidos</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/cheesecake.jpg" alt="Cheesecake">
+                        <figcaption>Cheesecake · 53 vendidos</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="img/croissant.jpg" alt="Croissant Artesanal">
+                        <figcaption>Croissant Artesanal · 49 vendidos</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+
+        <!-- ⭐ Nivel extra: Panel de Alertas a la derecha -->
+        <aside class="app-alertas">
+            <h3>Alertas del Negocio</h3>
+            <div class="lista-alertas">
+                <article class="alerta alerta-advertencia">
+                    <p class="alerta-titulo">⚠️ Inventario bajo</p>
+                    <p class="alerta-detalle">Café en grano: quedan menos de 3 kg en bodega.</p>
+                </article>
+
+                <article class="alerta alerta-urgente">
+                    <p class="alerta-titulo">🚨 Producto agotado</p>
+                    <p class="alerta-detalle">Cheesecake de frutos rojos se agotó a las 3:00 PM.</p>
+                </article>
+
+                <article class="alerta alerta-info">
+                    <p class="alerta-titulo">💡 Promoción activa</p>
+                    <p class="alerta-detalle">2x1 en Cold Brew durante la tarde.</p>
+                </article>
+
+                <article class="alerta alerta-exito">
+                    <p class="alerta-titulo">✅ Meta cumplida</p>
+                    <p class="alerta-detalle">Se superó la meta de cafés servidos del turno.</p>
+                </article>
+            </div>
+        </aside>
+
+        <!-- 4. Pie de página del tablero -->
+        <footer class="app-pie">
+            <p>&copy; 2026 Aroma Café · Sistema de Gestión ADSO · Cristian Quiroga</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
