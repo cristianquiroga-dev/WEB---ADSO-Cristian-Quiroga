@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aroma Café - Tablero de Control</title>
-    <!-- Tipografía Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -13,21 +12,18 @@
 </head>
 <body>
 
-    <!-- Contenedor principal con CSS Grid y grid-template-areas -->
     <div class="app">
 
-        <!-- 1. Encabezado del tablero -->
         <header class="app-encabezado">
             <div class="logo">
                 <img src="img/logo.svg" alt="Logo de Aroma Café" class="logo-img">
-                <span class="logo-texto">Aroma Café · Tablero de Control</span>
+                <span>Aroma Café · Tablero de Control</span>
             </div>
-            <div class="usuario">
+            <div>
                 <span>👤 Administrador</span>
             </div>
         </header>
 
-        <!-- 2. Menú lateral de navegación -->
         <nav class="app-menu">
             <ul>
                 <li><a href="#" class="activo">📊 Resumen</a></li>
@@ -38,11 +34,9 @@
             </ul>
         </nav>
 
-        <!-- 3. Contenido principal -->
         <main class="app-contenido">
             <h1>Resumen del Negocio</h1>
 
-            <!-- 4 Indicadores en cuadrícula con repeat(auto-fit, minmax()) -->
             <section class="indicadores">
                 <article class="indicador">
                     <p class="titulo">Ventas de hoy</p>
@@ -62,12 +56,10 @@
                 </article>
             </section>
 
-            <!-- Galería de productos más vendidos en Grid con figure y figcaption -->
             <section class="seccion-galeria">
                 <h2>Productos más vendidos</h2>
                 
                 <div class="galeria">
-                    <!-- Elemento destacado que ocupa 2 columnas (y 2 filas) -->
                     <figure class="destacado">
                         <img src="img/espresso.jpg" alt="Café Espresso Doble">
                         <figcaption>⭐ Espresso Doble · 142 vendidos</figcaption>
@@ -101,33 +93,31 @@
             </section>
         </main>
 
-        <!-- ⭐ Nivel extra: Panel de Alertas a la derecha -->
         <aside class="app-alertas">
             <h3>Alertas del Negocio</h3>
             <div class="lista-alertas">
-                <article class="alerta alerta-advertencia">
-                    <p class="alerta-titulo">⚠️ Inventario bajo</p>
-                    <p class="alerta-detalle">Café en grano: quedan menos de 3 kg en bodega.</p>
+                <article class="alerta">
+                    <p>⚠️ Inventario bajo</p>
+                    <p>Café en grano: quedan menos de 3 kg en bodega.</p>
                 </article>
 
-                <article class="alerta alerta-urgente">
-                    <p class="alerta-titulo">🚨 Producto agotado</p>
-                    <p class="alerta-detalle">Cheesecake de frutos rojos se agotó a las 3:00 PM.</p>
+                <article class="alerta">
+                    <p>🚨 Producto agotado</p>
+                    <p>Cheesecake de frutos rojos se agotó a las 3:00 PM.</p>
                 </article>
 
-                <article class="alerta alerta-info">
-                    <p class="alerta-titulo">💡 Promoción activa</p>
-                    <p class="alerta-detalle">2x1 en Cold Brew durante la tarde.</p>
+                <article class="alerta">
+                    <p>💡 Promoción activa</p>
+                    <p>2x1 en Cold Brew durante la tarde.</p>
                 </article>
 
-                <article class="alerta alerta-exito">
-                    <p class="alerta-titulo">✅ Meta cumplida</p>
-                    <p class="alerta-detalle">Se superó la meta de cafés servidos del turno.</p>
+                <article class="alerta">
+                    <p>✅ Meta cumplida</p>
+                    <p>Se superó la meta de cafés servidos del turno.</p>
                 </article>
             </div>
         </aside>
 
-        <!-- 4. Pie de página del tablero -->
         <footer class="app-pie">
             <p>&copy; 2026 Aroma Café · Sistema de Gestión ADSO · Cristian Quiroga</p>
         </footer>

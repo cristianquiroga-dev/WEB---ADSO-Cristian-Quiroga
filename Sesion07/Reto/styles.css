@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,13 +8,8 @@ body {
     font-family: "Poppins", Arial, sans-serif;
     background-color: #f4efe9;
     color: #1f2933;
-    min-height: 100vh;
 }
 
-/* ========================================================
-   1. Estructura principal con grid-template-areas y gap
-   ⭐ Nivel extra: plano con 3 columnas (menú, contenido y alertas)
-   ======================================================== */
 .app {
     display: grid;
     min-height: 100vh;
@@ -27,7 +21,6 @@ body {
         "pie        pie        pie";
 }
 
-/* Encabezado */
 .app-encabezado {
     grid-area: encabezado;
     background-color: #2b1810;
@@ -36,7 +29,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -46,21 +38,10 @@ body {
 }
 
 .logo-img {
-    width: 36px;
-    height: 36px;
+    width: 35px;
+    height: 35px;
 }
 
-.logo-texto {
-    font-size: 1.15rem;
-    font-weight: 600;
-}
-
-.usuario {
-    font-size: 0.9rem;
-    color: #f7e6d2;
-}
-
-/* Menú lateral */
 .app-menu {
     grid-area: menu;
     background-color: #1f2933;
@@ -76,12 +57,10 @@ body {
 
 .app-menu a {
     display: block;
-    padding: 0.7rem 0.9rem;
-    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
     color: #e5e7eb;
     text-decoration: none;
-    font-size: 0.95rem;
-    transition: background-color 0.2s;
 }
 
 .app-menu a:hover,
@@ -90,41 +69,34 @@ body {
     color: #ffffff;
 }
 
-/* Contenido principal */
 .app-contenido {
     grid-area: contenido;
-    padding: 1.75rem 2rem;
-    min-width: 0; /* Evita desbordes horizontales en Grid */
+    padding: 2rem;
+    min-width: 0;
 }
 
 .app-contenido h1 {
-    font-size: 1.6rem;
     color: #2b1810;
     margin-bottom: 1.25rem;
 }
 
-/* ========================================================
-   2. Indicadores en cuadrícula con repeat(auto-fit, minmax())
-   ======================================================== */
 .indicadores {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.25rem;
+    gap: 1rem;
     margin-bottom: 2rem;
 }
 
 .indicador {
     background-color: #ffffff;
     padding: 1.25rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #8b3a1e;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .indicador .titulo {
-    color: #52606d;
+    color: #666666;
     font-size: 0.85rem;
-    font-weight: 600;
 }
 
 .indicador .valor {
@@ -134,13 +106,7 @@ body {
     margin-top: 0.25rem;
 }
 
-/* ========================================================
-   3. Galería de "Productos más vendidos" en Grid
-   - 6 elementos (foto y texto con figure y figcaption)
-   - Uno que ocupe 2 columnas (y 2 filas)
-   ======================================================== */
 .seccion-galeria h2 {
-    font-size: 1.3rem;
     color: #2b1810;
     margin-bottom: 1rem;
 }
@@ -148,37 +114,32 @@ body {
 .galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
+    gap: 1rem;
 }
 
-/* figure con margin: 0 según la pista */
 .galeria figure {
     margin: 0;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
 }
 
-.galeria figure img {
+.galeria img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    display: block;
 }
 
 .galeria figcaption {
-    padding: 0.7rem 0.8rem;
+    padding: 0.75rem;
     font-size: 0.85rem;
     font-weight: 600;
-    color: #2b1810;
     text-align: center;
-    background-color: #ffffff;
 }
 
-/* Elemento que ocupa 2 columnas (y 2 filas según el Paso 3) */
 .galeria .destacado {
     grid-column: span 2;
     grid-row: span 2;
@@ -189,16 +150,6 @@ body {
     flex: 1;
 }
 
-.galeria .destacado figcaption {
-    background-color: #f7e6d2;
-    color: #8b3a1e;
-    font-weight: 600;
-    padding: 0.85rem;
-}
-
-/* ========================================================
-   Panel de Alertas (⭐ Nivel extra)
-   ======================================================== */
 .app-alertas {
     grid-area: alertas;
     background-color: #ffffff;
@@ -206,60 +157,31 @@ body {
     border-left: 1px solid #e4e7eb;
 }
 
-.app-alertas h3 {
-    font-size: 1.15rem;
-    color: #2b1810;
-    margin-bottom: 1.25rem;
-}
-
 .lista-alertas {
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
+    gap: 0.75rem;
+    margin-top: 1rem;
 }
 
 .alerta {
-    padding: 0.85rem;
-    border-radius: 8px;
+    padding: 0.75rem;
+    border-radius: 6px;
     background-color: #f8fafc;
-    border-left: 4px solid #cbd5e1;
+    border-left: 4px solid #8b3a1e;
+    font-size: 0.85rem;
 }
 
-.alerta-titulo {
-    font-size: 0.85rem;
+.alerta p:first-child {
     font-weight: 600;
     margin-bottom: 0.2rem;
 }
 
-.alerta-detalle {
+.alerta p:last-child {
+    color: #555555;
     font-size: 0.8rem;
-    color: #4b5563;
-    line-height: 1.4;
 }
 
-.alerta-advertencia {
-    background-color: #fffbeb;
-    border-left-color: #f59e0b;
-}
-
-.alerta-urgente {
-    background-color: #fef2f2;
-    border-left-color: #ef4444;
-}
-
-.alerta-info {
-    background-color: #eff6ff;
-    border-left-color: #3b82f6;
-}
-
-.alerta-exito {
-    background-color: #f0fdf4;
-    border-left-color: #22c55e;
-}
-
-/* ========================================================
-   4. Pie de página
-   ======================================================== */
 .app-pie {
     grid-area: pie;
     background-color: #2b1810;
