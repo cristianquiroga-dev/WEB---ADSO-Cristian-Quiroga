@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #222222;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.encabezado {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-img {
+    width: 36px;
+    height: 36px;
+}
+
+.logo-texto {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.menu a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #e09f3e;
+}
+
+main {
+    width: 100%;
+}
+
+.portada {
+    background-color: #ffffff;
+    padding: 2.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.portada-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.portada-contenido h1 {
+    font-size: 1.9rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.frase {
+    font-size: 1rem;
+    color: #555555;
+}
+
+.boton-cta {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #25d366;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.85rem 1.5rem;
+    border-radius: 6px;
+}
+
+.boton-cta:hover {
+    background-color: #1ebe5d;
+}
+
+.portada-imagen img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios {
+    padding: 2.5rem 1.25rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.beneficios h2 {
+    font-size: 1.6rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.beneficio-tarjeta {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #6a1616;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.beneficio-tarjeta h3 {
+    font-size: 1.15rem;
+    color: #6a1616;
+    margin-bottom: 0.5rem;
+}
+
+.beneficio-tarjeta p {
+    font-size: 0.95rem;
+    color: #555555;
+}
+
+.como-pedir {
+    background-color: #ffffff;
+    padding: 2.5rem 1.25rem;
+}
+
+.como-pedir h2 {
+    font-size: 1.6rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pasos-lista {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.paso-item h3 {
+    font-size: 1.05rem;
+    color: #1a1a1a;
+    margin-bottom: 0.25rem;
+}
+
+.paso-item p {
+    font-size: 0.95rem;
+    color: #555555;
+}
+
+.pie-pagina {
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+    padding: 2rem 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.contacto-datos h3 {
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.contacto-datos p {
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+    color: #cccccc;
+}
+
+.pie-copy {
+    font-size: 0.8rem;
+    color: #888888;
+    border-top: 1px solid #333333;
+    width: 100%;
+    max-width: 600px;
+    padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .encabezado {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.25rem 2.5rem;
+    }
+
+    .menu {
+        flex-direction: row;
+        width: auto;
+        gap: 1.75rem;
+    }
+
+    .portada {
+        flex-direction: row;
+        align-items: center;
+        padding: 3.5rem 2.5rem;
+    }
+
+    .portada-contenido {
+        flex: 1;
+    }
+
+    .portada-imagen {
+        flex: 1;
+    }
+
+    .portada-contenido h1 {
+        font-size: 2.3rem;
+    }
+
+    .beneficios {
+        padding: 3.5rem 2.5rem;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .como-pedir {
+        padding: 3.5rem 2.5rem;
+    }
+
+    .pasos-lista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .encabezado {
+        padding: 1.25rem 4rem;
+    }
+
+    .portada {
+        padding: 4rem 4rem;
+        gap: 3rem;
+    }
+
+    .portada-contenido h1 {
+        font-size: 2.7rem;
+    }
+
+    .beneficios {
+        padding: 4rem 4rem;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.75rem;
+    }
+
+    .como-pedir {
+        padding: 4rem 4rem;
+    }
+}
