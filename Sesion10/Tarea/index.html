@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis tareas - Sesión 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+
+    <main class="app-tareas">
+
+        <header class="encabezado-tareas">
+            <h1>Mis tareas</h1>
+            <div class="linea-titulo"></div>
+        </header>
+
+        <form class="formulario-tarea" action="#" method="POST">
+            <input 
+                type="text" 
+                class="input" 
+                placeholder="Escribir tarea" 
+                aria-label="Escribir nueva tarea"
+            >
+            <button type="button" class="boton boton-principal">+ Agregar</button>
+        </form>
+
+        <div class="alerta alerta-peligro oculto" role="alert">
+            <p>Por favor, escribe el nombre de una tarea antes de agregarla.</p>
+        </div>
+
+        <section class="caja-lista-tareas" aria-label="Lista de tareas">
+            <ul class="lista-tareas">
+                <li class="tarea-item">
+                    <label class="tarea-label">
+                        <input type="checkbox" class="tarea-checkbox">
+                        <span class="tarea-texto">Estudiar Python</span>
+                    </label>
+                    <button type="button" class="boton-emoji" aria-label="Eliminar tarea">🗑️</button>
+                </li>
+
+                <li class="tarea-item">
+                    <label class="tarea-label">
+                        <input type="checkbox" class="tarea-checkbox" checked>
+                        <span class="tarea-texto hecha">Hacer ejercicio</span>
+                    </label>
+                    <button type="button" class="boton-emoji" aria-label="Eliminar tarea">🗑️</button>
+                </li>
+
+                <li class="tarea-item">
+                    <label class="tarea-label">
+                        <input type="checkbox" class="tarea-checkbox">
+                        <span class="tarea-texto">Pagar el internet</span>
+                    </label>
+                    <button type="button" class="boton-emoji" aria-label="Eliminar tarea">🗑️</button>
+                </li>
+
+                <li class="tarea-item">
+                    <label class="tarea-label">
+                        <input type="checkbox" class="tarea-checkbox">
+                        <span class="tarea-texto">Aprender ciberseguridad</span>
+                    </label>
+                    <button type="button" class="boton-emoji" aria-label="Eliminar tarea">🗑️</button>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="contador-contenedor">
+            <div class="caja-contador">
+                <p>Tareas completadas: 1 de 4</p>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
