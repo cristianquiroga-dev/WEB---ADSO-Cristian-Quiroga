@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit de Diseño - Sesión 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <header class="encabezado-kit">
+            <h1>Kit de Diseño CSS</h1>
+            <p>Guía de estilos y componentes de interfaz</p>
+        </header>
+
+        <section class="seccion">
+            <h2>Paleta de Colores</h2>
+            <div class="paleta">
+                <div class="muestra">
+                    <div class="color-caja muestra-primario"></div>
+                    <span>--color-primario</span>
+                </div>
+                <div class="muestra">
+                    <div class="color-caja muestra-secundario"></div>
+                    <span>--color-secundario</span>
+                </div>
+                <div class="muestra">
+                    <div class="color-caja muestra-acento"></div>
+                    <span>--color-acento</span>
+                </div>
+                <div class="muestra">
+                    <div class="color-caja muestra-fondo"></div>
+                    <span>--color-fondo</span>
+                </div>
+                <div class="muestra">
+                    <div class="color-caja muestra-peligro"></div>
+                    <span>--color-peligro</span>
+                </div>
+                <div class="muestra">
+                    <div class="color-caja muestra-texto"></div>
+                    <span>--color-texto</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>Tipografía</h2>
+            <h1>Encabezado Principal H1</h1>
+            <h2>Subtítulo de Sección H2</h2>
+            <h3>Encabezado Menor H3</h3>
+            <p>Este es un párrafo con un <a href="#">enlace interactivo</a> integrado en el texto.</p>
+            <small>Texto pequeño para notas al pie o información secundaria.</small>
+        </section>
+
+        <section class="seccion">
+            <h2>Botones</h2>
+            <div class="fila">
+                <button type="button" class="boton boton-principal">Principal</button>
+                <button type="button" class="boton boton-secundario">Secundario</button>
+                <button type="button" class="boton boton-peligro">Peligro</button>
+                <button type="button" class="boton boton-principal" disabled>Deshabilitado</button>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>Alertas e Insignias</h2>
+            <div class="lista-alertas">
+                <div class="alerta alerta-info">
+                    <p>Información: Novedades disponibles en la plataforma.</p>
+                </div>
+                <div class="alerta alerta-exito">
+                    <p>Éxito: Registro completado correctamente.</p>
+                </div>
+                <div class="alerta alerta-advertencia">
+                    <p>Advertencia: Se requiere confirmar los datos ingresados.</p>
+                </div>
+                <div class="alerta alerta-peligro">
+                    <p>Peligro: Error crítico al procesar la solicitud.</p>
+                </div>
+            </div>
+
+            <div class="fila">
+                <span class="insignia insignia-primaria">Primaria</span>
+                <span class="insignia insignia-exito">Éxito</span>
+                <span class="insignia insignia-peligro">Peligro</span>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>Estados</h2>
+            
+            <div class="fila">
+                <div class="cargando girando"></div>
+                <p class="hecha">Elemento con estado finalizado</p>
+                <button type="button" class="boton boton-principal activo">Activo</button>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="text" id="correo" class="input error" value="usuario@correo">
+                <small class="error">El correo electrónico no es válido</small>
+            </div>
+
+            <!-- Este párrafo no se ve porque tiene la clase .oculto con display: none -->
+            <p class="oculto">Este párrafo está oculto mediante CSS.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
