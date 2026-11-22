@@ -1,18 +1,20 @@
+/* ============================================================
+   RETO SESIÓN 11 Y 12 - LANDING PAGE BARBER STO DOMINGO
+   Estructura: Mobile First, Flexbox, Grid y Posicionamiento
+   ============================================================ */
+
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    animation: aparecer 0.7s ease-out;
 }
-
-.boton-cta[target="_blank"]::after { content: " ↗"; }
 
 body {
     font-family: "Poppins", Arial, sans-serif;
     background-color: #f7f7f7;
     color: #222222;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 img {
@@ -21,17 +23,21 @@ img {
     display: block;
 }
 
+/* ============================================================
+   1. ENCABEZADO STICKY (Queda por encima al hacer scroll)
+   ============================================================ */
 .encabezado {
     background-color: #1a1a1a;
     color: #ffffff;
-    padding: 1.25rem 1rem;
+    padding: 1rem 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    position:sticky;
+    gap: 0.75rem;
+    position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
@@ -56,7 +62,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
     width: 100%;
 }
 
@@ -65,16 +71,23 @@ img {
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    transition: color 0.2s ease;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a:focus {
     color: #e09f3e;
 }
 
+/* ============================================================
+   CONTENIDO PRINCIPAL
+   ============================================================ */
 main {
     width: 100%;
 }
 
+/* Portada / Hero */
 .portada {
     background-color: #ffffff;
     padding: 2.5rem 1.25rem;
@@ -92,77 +105,81 @@ main {
 }
 
 .portada-contenido h1 {
-    font-size: 1.9rem;
+    font-size: 2rem;
     color: #1a1a1a;
     line-height: 1.2;
 }
 
 .frase {
     font-size: 1rem;
-    color: #555555;
+    color: #444444;
 }
 
-.whatsapp-flotante{
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    z-index: 20;
-    display: grid;
-    place-items: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    font-size: 1.6rem;
-    background-color: #fff;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+.portada-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin-top: 0.5rem;
 }
 
 .boton-cta {
     display: inline-block;
-    align-self: flex-start;
-    background-color: #25d366;
+    background-color: #138844;
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.95rem;
     padding: 0.85rem 1.5rem;
     border-radius: 6px;
+    transition: background-color 0.2s ease;
 }
 
-.boton-cta:hover {
-    background-color: #1ebe5d;
+.boton-cta:hover,
+.boton-cta:focus {
+    background-color: #0f6c36;
+}
+
+.boton-cta[target="_blank"]::after {
+    content: " ↗";
+}
+
+.boton-promo {
+    display: inline-block;
+    background-color: transparent;
+    color: #6a1616;
+    border: 2px solid #6a1616;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.boton-promo:hover,
+.boton-promo:focus {
+    background-color: #6a1616;
+    color: #ffffff;
 }
 
 .portada-imagen img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
+/* ============================================================
+   3. SECCIÓN BENEFICIOS E INSIGNIA EN ESQUINA (absolute en relative)
+   ============================================================ */
 .beneficios {
     padding: 2.5rem 1.25rem;
     max-width: 1100px;
     margin: 0 auto;
-    
-}
-
-#iconos{
-    position: absolute;
-    display: inline-block;
-    width: 35px;
-    height: 40px;
-    top: 0.75rem;
-    right: 0.75rem;
-}
-
-#iconos img{
-    width: 100%;
-    height: 100%;
-    object-fit:contain;
 }
 
 .beneficios h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: #1a1a1a;
     text-align: center;
     margin-bottom: 2rem;
@@ -171,16 +188,45 @@ main {
 .beneficios-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.25rem;
+    gap: 1.5rem;
 }
 
+/* Tarjeta con position: relative para alojar la insignia absolute */
 .beneficio-tarjeta {
     position: relative;
     background-color: #ffffff;
-    padding: 1.5rem;
+    padding: 1.75rem 1.5rem 1.5rem;
     border-radius: 8px;
     border-left: 4px solid #6a1616;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Insignia en la esquina de la tarjeta */
+.tarjeta-insignia {
+    position: absolute;
+    top: 0.85rem;
+    right: 0.85rem;
+    background-color: #6a1616;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-icono {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 0.75rem;
+}
+
+.tarjeta-icono img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .beneficio-tarjeta h3 {
@@ -191,28 +237,39 @@ main {
 
 .beneficio-tarjeta p {
     font-size: 0.95rem;
-    color: #555555;
+    color: #333333;
 }
 
+/* ============================================================
+   SECCIÓN CÓMO PEDIR
+   ============================================================ */
 .como-pedir {
     background-color: #ffffff;
     padding: 2.5rem 1.25rem;
+    text-align: center;
 }
 
 .como-pedir h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: #1a1a1a;
-    text-align: center;
     margin-bottom: 2rem;
 }
 
 .pasos-lista {
     max-width: 800px;
     margin: 0 auto;
-    padding-left: 1.5rem;
+    list-style: none;
+    text-align: left;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+}
+
+.paso-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    border-left: 3px solid #1a1a1a;
 }
 
 .paso-item h3 {
@@ -223,13 +280,174 @@ main {
 
 .paso-item p {
     font-size: 0.95rem;
-    color: #080808;
+    color: #444444;
 }
 
+.como-pedir-accion {
+    margin-top: 2rem;
+}
+
+.boton-pedir {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.85rem 1.75rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.boton-pedir:hover,
+.boton-pedir:focus {
+    background-color: #333333;
+}
+
+/* ============================================================
+   4. VENTANA MODAL CON :target (Fondo oscuro, encima de todo)
+   ============================================================ */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Fondo oscuro */
+    z-index: 1000;                        /* Por encima de todo */
+    display: none;                         /* Oculta por defecto */
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+}
+
+/* Se muestra cuando la URL termina en #promo */
+.modal:target {
+    display: flex;
+}
+
+.modal-caja {
+    position: relative;
+    background-color: #ffffff;
+    color: #222222;
+    width: 100%;
+    max-width: 480px;
+    padding: 2.25rem 1.75rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    animation: modalAnim 0.3s ease-out;
+}
+
+@keyframes modalAnim {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-cerrar {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #444444;
+    text-decoration: none;
+    line-height: 1;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.modal-cerrar:hover,
+.modal-cerrar:focus {
+    color: #000000;
+    background-color: #eaeaea;
+}
+
+.modal-caja h2 {
+    font-size: 1.6rem;
+    color: #6a1616;
+    margin-bottom: 0.75rem;
+}
+
+.modal-descripcion {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 1.25rem;
+}
+
+.modal-tarjeta-promo {
+    background-color: #f7f3ee;
+    border: 1px dashed #6a1616;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.modal-instruccion {
+    font-size: 0.85rem;
+    color: #555555;
+    margin-bottom: 0.35rem;
+}
+
+.modal-codigo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #6a1616;
+    letter-spacing: 2px;
+}
+
+.boton-modal {
+    width: 100%;
+    text-align: center;
+}
+
+/* ============================================================
+   2. BOTÓN FLOTANTE DE WHATSAPP (fixed, aria-label, no tapa info)
+   ============================================================ */
+.whatsapp-flotante {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 90;
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-flotante:hover,
+.whatsapp-flotante:focus {
+    transform: scale(1.08);
+}
+
+.whatsapp-flotante img {
+    width: 36px;
+    height: 36px;
+}
+
+/* ============================================================
+   PIE DE PÁGINA (Con padding inferior para no tapar en celular)
+   ============================================================ */
 .pie-pagina {
     background-color: #1a1a1a;
     color: #e5e5e5;
-    padding: 2rem 1.25rem 1.25rem;
+    /* En celular dejamos 5.5rem abajo para que el botón flotante no tape textos */
+    padding: 2.5rem 1.25rem 5.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,86 +469,16 @@ main {
 
 .pie-copy {
     font-size: 0.8rem;
-    color: #888888;
+    color: #b0b0b0;
     border-top: 1px solid #333333;
     width: 100%;
     max-width: 600px;
     padding-top: 1rem;
 }
 
-.boton-pedir{
-    margin: 0.75rem;
-    display: inline-block;
-    align-self: flex-start;
-    background-color: #020202;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.85rem 1.5rem;
-    border-radius: 6px;
-}
-
-.como-pedir{
-    text-align: center;
-}
-
-.modal {
-    position: fixed;
-    inset: 80px 450px;                /* toda la pantalla */
-    z-index: 30;             /* encima de todo */
-    display: none;           /* escondida al inicio */
-    place-items: center;
-    padding: 1rem;
-    border: 4px solid rgba(46, 46, 46, 0.829);
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
-    color: #020202;
-    animation: aparecer 0.5s ease-out;
-}
-
-.modal:target { display: grid; }   /* cuando la dirección termina en #promo */
-
-.modal-caja {
-  position: relative;
-  width: 100%;
-  max-width: 420px;
-  padding: 2rem;
-  border-radius: 16px;
-  background-color: var(--superficie);
-}
-
-.modal-cerrar {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.75rem;
-  font-size: 1.5rem;
-  color: var(--texto-suave);
-  text-decoration: none;
-}
-
-h2::after {
-  content: "";
-  display: block;
-  width: 3rem;
-  height: 4px;
-  margin-top: 0.5rem;
-  border-radius: 2px;
-  background-color: var(--acento);
-}
-
-.modal-caja h2::after { display: none; }
-
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(10px); 
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* ============================================================
+   RESPONSIVE DESIGN (Mobile First -> Tablet -> Desktop)
+   ============================================================ */
 @media (min-width: 768px) {
     .encabezado {
         flex-direction: row;
@@ -341,7 +489,7 @@ h2::after {
     .menu {
         flex-direction: row;
         width: auto;
-        gap: 1.75rem;
+        gap: 1.5rem;
     }
 
     .portada {
@@ -359,7 +507,7 @@ h2::after {
     }
 
     .portada-contenido h1 {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
     }
 
     .beneficios {
@@ -378,8 +526,11 @@ h2::after {
     .pasos-lista {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        padding-left: 2rem;
+        gap: 1.5rem;
+    }
+
+    .pie-pagina {
+        padding: 2.5rem 2.5rem 2.5rem;
     }
 }
 
