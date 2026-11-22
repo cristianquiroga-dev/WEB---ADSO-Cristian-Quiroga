@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativa: Sesión 08 vs Sesión 13 | Cristian Quiroga</title>
+    <meta name="description" content="Comparativa técnica entre la landing Barber Sto Domingo con CSS puro (Sesión 08) y Bootstrap 5 (Sesión 13). Capturas de Lighthouse, tabla de criterios y conclusión final.">
+
+    <link rel="icon" type="image/png" href="../Reto/img/barber.png">
+    <link rel="shortcut icon" href="../Reto/img/barber.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark sticky-top border-bottom border-secondary">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#">
+                <img src="../Reto/img/barber.png" alt="Logo" width="30" height="30">
+                <span>ADSO · Tarea Sesión 13</span>
+            </a>
+            <div class="d-flex gap-2 flex-wrap">
+                <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion08/Reto/" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer">Ver Sesión 08</a>
+                <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion13/Reto/" class="btn btn-marca btn-sm" target="_blank" rel="noopener noreferrer">Ver Sesión 13</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white py-5 border-bottom">
+        <div class="container text-center py-2">
+            <span class="badge bg-dark px-3 py-2 text-uppercase mb-3">Análisis Comparativo · Sesión 13</span>
+            <h1 class="display-6 fw-bold text-dark mb-3">CSS Puro vs Bootstrap 5</h1>
+            <p class="lead text-secondary mx-auto mb-4" style="max-width: 800px;">
+                Evaluación técnica de la landing <strong>Barber Sto Domingo</strong>: versión con CSS nativo (Sesión 08) frente a la versión con Bootstrap 5 (Sesión 13). Capturas reales, tabla de criterios y conclusión final.
+            </p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap">
+                <a href="#capturas" class="btn btn-outline-secondary btn-sm">1. Capturas Lighthouse</a>
+                <a href="#tabla" class="btn btn-outline-secondary btn-sm">2. Tabla Comparativa</a>
+                <a href="#conclusion" class="btn btn-outline-secondary btn-sm">3. Conclusión</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <section id="capturas" class="mb-5">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge bg-marca fs-6 px-3 py-2">1</span>
+                <h2 class="h3 fw-bold text-dark mb-0">Capturas en modo incógnito (Lighthouse)</h2>
+            </div>
+            <p class="text-secondary mb-4">
+                Capturas de pantalla tomadas sobre los despliegues reales en GitHub Pages ejecutando Lighthouse en modo incógnito, sin extensiones, para medir rendimiento, accesibilidad, buenas prácticas y SEO.
+            </p>
+
+            <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm tarjeta-captura">
+                        <div class="card-header bg-dark text-white py-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h3 class="h5 fw-bold mb-0">Sesión 08 · CSS Puro</h3>
+                                    <small class="text-white-50">HTML semántico + media queries propias</small>
+                                </div>
+                                <span class="badge bg-secondary">300 líneas CSS</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <img src="img/lighthouse-sesion08.png" alt="Captura de la landing Sesión 08 ejecutada en Lighthouse modo incógnito" class="img-fluid rounded border w-100">
+                        </div>
+                        <div class="card-footer bg-white border-top">
+                            <div class="row text-center g-2 mb-3">
+                                <div class="col-3">
+                                    <div class="p-2 border rounded bg-light">
+                                        <div class="fw-bold text-success fs-5">99</div>
+                                        <small class="text-muted" style="font-size:0.72rem;">Rendimiento</small>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="p-2 border rounded bg-light">
+                                        <div class="fw-bold text-success fs-5">94</div>
+                                        <small class="text-muted" style="font-size:0.72rem;">Accesibilidad</small>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="p-2 border rounded bg-light">
+                                        <div class="fw-bold text-success fs-5">100</div>
+                                        <small class="text-muted" style="font-size:0.72rem;">Prácticas</small>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="p-2 border rounded bg-light">
+                                        <div class="fw-bold text-warning-emphasis fs-5">92</div>
+                                        <small class="text-muted" style="font-size:0.72rem;">SEO</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion08/Reto/" class="btn btn-outline-dark btn-sm w-100" target="_blank" rel="noopener noreferrer">Abrir Sesión 08 en vivo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm tarjeta-captura">
+                        <div class="card-header bg-marca text-white py-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h3 class="h5 fw-bold mb-0">Sesión 13 · Bootstrap 5</h3>
+                                    <small class="text-white-50">Grid 12 col + variables de marca CSS</small>
+                                </div>
+                                <span class="badge bg-dark">58 líneas CSS</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <img src="img/lighthouse-sesion13.png" alt="Captura de la landing Sesión 13 ejecutada en Lighthouse modo incógnito" class="img-fluid rounded border w-100">
+                        </div>
+                        <div class="card-footer bg-white border-top">
+                            <div class="row text-center g-2 mb-3">
+                                <div class="col-3">
+                                    <div class="p-2 border rounded bg-light">
+                                        <div class="fw-bold text-success fs-5">94</div>
+                                        <small class="text-muted" style="font-size:0.72rem;">Rendimiento</small>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="p-2 border rounded bg-light">
+                                        <div class="fw-bold text-success fs-5">98</div>
+                                        <small class="text-muted" style="font-size:0.72rem;">Accesibilidad</small>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="p-2 border rounded bg-light">
+                                        <div class="fw-bold text-success fs-5">100</div>
+                                        <small class="text-muted" style="font-size:0.72rem;">Prácticas</small>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="p-2 border rounded bg-light">
+                                        <div class="fw-bold text-success fs-5">100</div>
+                                        <small class="text-muted" style="font-size:0.72rem;">SEO</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion13/Reto/" class="btn btn-marca btn-sm w-100" target="_blank" rel="noopener noreferrer">Abrir Sesión 13 en vivo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tabla" class="mb-5">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge bg-marca fs-6 px-3 py-2">2</span>
+                <h2 class="h3 fw-bold text-dark mb-0">Tabla Comparativa</h2>
+            </div>
+            <p class="text-secondary mb-4">
+                Comparación por 6 criterios técnicos y de experiencia de desarrollo.
+            </p>
+
+            <div class="table-responsive shadow-sm rounded-3">
+                <table class="table table-hover table-bordered mb-0 tabla-comparativa align-middle bg-white">
+                    <thead>
+                        <tr>
+                            <th style="width:22%;">Criterio</th>
+                            <th style="width:30%;">Sesión 08 (CSS Puro)</th>
+                            <th style="width:30%;">Sesión 13 (Bootstrap 5)</th>
+                            <th style="width:18%;" class="text-center">Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-semibold">1. Rendimiento (Lighthouse)</td>
+                            <td>
+                                <strong class="text-success">99/100</strong>
+                                <p class="small text-secondary mb-0">Sin librerías externas, el navegador descarga solo CSS propio (~12 KB). FCP en 0.8 s.</p>
+                            </td>
+                            <td>
+                                <strong class="text-success">94/100</strong>
+                                <p class="small text-secondary mb-0">Descarga Bootstrap CSS (~25 KB) + bundle JS (~80 KB) desde CDN. FCP en 1.1 s.</p>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge bg-success-subtle text-success border border-success-subtle insignia-ganador">Sesión 08 ✓</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">2. Líneas de CSS escritas</td>
+                            <td>
+                                <strong>300 líneas</strong>
+                                <p class="small text-secondary mb-0">Resets manuales, flexbox, cuadrícula CSS Grid, 2 bloques de media queries y todos los estados hover.</p>
+                            </td>
+                            <td>
+                                <strong class="text-success">58 líneas (-81%)</strong>
+                                <p class="small text-secondary mb-0">Solo variables de marca (<code>--bs-btn-*</code>) y colores de foco. El layout es 100% utilidades de Bootstrap.</p>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle insignia-ganador">Bootstrap ✓</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">3. Tiempo que tomó</td>
+                            <td>
+                                <strong>~3 a 4 horas</strong>
+                                <p class="small text-secondary mb-0">Calcular márgenes, depurar alineaciones y redactar media queries tomó la mayor parte del tiempo.</p>
+                            </td>
+                            <td>
+                                <strong class="text-success">~45 minutos</strong>
+                                <p class="small text-secondary mb-0">Las clases utilitarias (<code>py-5</code>, <code>gap-3</code>, <code>shadow-sm</code>) eliminaron casi todo el CSS manual.</p>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle insignia-ganador">Bootstrap ✓</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">4. Facilidad para hacerla responsive</td>
+                            <td>
+                                <strong>Media</strong>
+                                <p class="small text-secondary mb-0">Se necesitaron dos bloques <code>@media</code> explícitos (768 px y 1024 px) para manejar columnas y flex-direction.</p>
+                            </td>
+                            <td>
+                                <strong class="text-success">Muy fácil</strong>
+                                <p class="small text-secondary mb-0"><code>col-12 col-md-6 col-lg-4</code> resuelve 1→2→3 columnas automáticamente sin escribir una sola media query.</p>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle insignia-ganador">Bootstrap ✓</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">5. Qué tan única se ve</td>
+                            <td>
+                                <strong class="text-success">100% original</strong>
+                                <p class="small text-secondary mb-0">Cada borde, tipografía y espacio es una decisión de diseño propia. No se parece a ningún framework.</p>
+                            </td>
+                            <td>
+                                <strong>Estándar Bootstrap</strong>
+                                <p class="small text-secondary mb-0">El acabado es limpio y profesional, pero reconocible. Para diferenciarse se requiere personalización adicional.</p>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge bg-success-subtle text-success border border-success-subtle insignia-ganador">Sesión 08 ✓</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">6. Formulario con validación</td>
+                            <td>
+                                <strong>Ausente</strong>
+                                <p class="small text-secondary mb-0">La versión original solo tiene un botón de enlace a WhatsApp. No hay formulario ni validación de datos.</p>
+                            </td>
+                            <td>
+                                <strong class="text-success">Completo y accesible</strong>
+                                <p class="small text-secondary mb-0"><code>needs-validation</code>, <code>invalid-feedback</code> y atributos ARIA integrados en un único formulario de 6 campos.</p>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle insignia-ganador">Bootstrap ✓</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge bg-marca fs-6 px-3 py-2">3</span>
+                <h2 class="h3 fw-bold text-dark mb-0">Conclusión: ¿Bootstrap o kit propio en el proyecto final?</h2>
+            </div>
+            <p class="text-secondary mb-4">Decisión técnica y justificación para el proyecto formativo ADSO.</p>
+
+            <div class="card border-0 shadow-sm bg-white">
+                <div class="card-body p-4 p-md-5">
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <span class="fs-2">🏆</span>
+                        <div>
+                            <h3 class="h4 fw-bold text-dark mb-1">Usaremos Bootstrap 5 + variables de marca propias</h3>
+                            <p class="text-secondary mb-0">La decisión no es usar Bootstrap <em>en lugar</em> de CSS; es usarlo como cimientos para escribir menos CSS repetitivo y dedicar más tiempo a la identidad visual del proyecto.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-12 col-md-6">
+                            <div class="border rounded-3 p-3 h-100 bg-light">
+                                <h4 class="h6 fw-bold mb-2">⚡ Velocidad de entrega</h4>
+                                <p class="small text-secondary mb-0">En ADSO los proyectos tienen tiempos cortos. Bootstrap redujo el CSS necesario en un 81% (de 300 a 58 líneas), lo que libera horas para funcionalidades y lógica de negocio.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="border rounded-3 p-3 h-100 bg-light">
+                                <h4 class="h6 fw-bold mb-2">👥 Trabajo colaborativo</h4>
+                                <p class="small text-secondary mb-0">La nomenclatura de Bootstrap (<code>container</code>, <code>row</code>, <code>col-md-6</code>) es un estándar conocido. Cualquier compañero entiende la estructura sin leer la documentación de un kit personalizado.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="border rounded-3 p-3 h-100 bg-light">
+                                <h4 class="h6 fw-bold mb-2">♿ Accesibilidad incluida</h4>
+                                <p class="small text-secondary mb-0">Los componentes de Bootstrap incorporan atributos ARIA y foco visible probados en múltiples navegadores y lectores de pantalla, cumpliendo estándares WCAG sin esfuerzo extra.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="border rounded-3 p-3 h-100 bg-light">
+                                <h4 class="h6 fw-bold mb-2">🎨 Identidad visual propia</h4>
+                                <p class="small text-secondary mb-0">Mediante <code>--bs-btn-bg</code>, <code>--bs-btn-hover-bg</code> y clases como <code>.text-marca</code>, se elimina el azul por defecto y se aplican los colores del proyecto sin escribir CSS extra de maquetado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert border-0 bg-dark text-white mb-0">
+                        <strong>Conclusión final:</strong> Bootstrap 5 + variables CSS de marca propia es la combinación óptima para el proyecto final de ADSO. Se obtiene la solidez de un framework probado en producción, la velocidad de desarrollo que necesita el curso, y la identidad visual diferenciada que requiere cualquier producto de software profesional.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white-50 py-4 border-top border-secondary mt-5">
+        <div class="container text-center">
+            <p class="mb-1 text-white fw-semibold">Cristian Quiroga · ADSO</p>
+            <p class="small text-white-50 mb-0">&copy; 2026 Análisis y Desarrollo de Software · SENA</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
