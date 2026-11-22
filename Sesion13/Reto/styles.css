@@ -1,15 +1,8 @@
-/* ========================================================
-   ESTILOS DE MARCA - BARBER STO DOMINGO
-   Ajustes de identidad visual y colores de marca.
-   Todo el maquetado y responsividad usa Bootstrap 5.
-   ======================================================== */
-
 body {
     font-family: "Poppins", Arial, sans-serif;
     color: #222222;
 }
 
-/* 6. Colores de la marca con variables de Bootstrap (--bs-btn-...) */
 .btn-primary {
     --bs-btn-color: #ffffff;
     --bs-btn-bg: #6a1616;
@@ -40,7 +33,6 @@ body {
     --bs-btn-disabled-border-color: #6a1616;
 }
 
-/* Ajustes de marca para los campos del formulario al hacer foco */
 .form-control:focus,
 .form-select:focus {
     border-color: #6a1616;
@@ -57,7 +49,6 @@ body {
     box-shadow: 0 0 0 0.25rem rgba(106, 22, 22, 0.25);
 }
 
-/* 7. Clases de apoyo con colores de marca */
 .text-marca {
     color: #6a1616 !important;
 }
