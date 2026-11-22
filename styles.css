@@ -391,61 +391,6 @@ img {
     border-color: #111417;
 }
 
-.contenedor-tarjetas {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-}
-
-.tarjeta-reto {
-    background-color: var(--color-blanco);
-    border: 1px solid var(--color-borde);
-    border-radius: 16px;
-    padding: 1.5rem;
-    box-shadow: var(--sombra);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 0.85rem;
-    transition: transform 0.2s ease;
-}
-
-.tarjeta-reto:hover {
-    transform: translateY(-3px);
-}
-
-.numero-sesion {
-    align-self: flex-start;
-    padding: 0.2rem 0.6rem;
-    border-radius: 999px;
-    background-color: rgba(112, 12, 12, 0.1);
-    color: var(--color-primario);
-    font-size: 0.78rem;
-    font-weight: 700;
-}
-
-.tarjeta-reto h3 {
-    font-size: 1.05rem;
-    color: var(--color-primario);
-}
-
-.tarjeta-reto .nombre-reto {
-    font-size: 0.85rem;
-    color: var(--color-texto-suave);
-    line-height: 1.5;
-}
-
-.reto-acciones {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-.reto-acciones .boton {
-    padding: 0.45rem 0.75rem;
-    font-size: 0.82rem;
-}
-
 .contacto-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -581,8 +526,7 @@ img {
 
 @media (min-width: 650px) {
     .sobre-mi-grid,
-    .proyectos-grid,
-    .contenedor-tarjetas {
+    .proyectos-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -600,9 +544,5 @@ img {
 
     .contacto-grid {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .contenedor-tarjetas {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
