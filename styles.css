@@ -1,10 +1,3 @@
-/* ==========================================================================
-   PORTAFOLIO PROFESIONAL - CRISTIAN QUIROGA
-   Tecnólogo en Análisis y Desarrollo de Software (ADSO) - SENA
-   Arquitectura CSS: Mobile First y Maquetación Semántica
-   ========================================================================== */
-
-/* Variables de color y estilos base del repositorio */
 :root {
     --color-primario: #700c0c;
     --color-primario-oscuro: #540808;
@@ -23,7 +16,6 @@
     --sombra-hover: 0 8px 25px rgba(112, 12, 12, 0.15);
 }
 
-/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -49,9 +41,6 @@ img {
     display: block;
 }
 
-/* ==========================================================================
-   ENCABEZADO Y NAVEGACIÓN FIJA (STICKY)
-   ========================================================================== */
 .encabezado {
     background-color: var(--color-blanco);
     border-bottom: 1px solid var(--color-borde);
@@ -110,9 +99,6 @@ img {
     outline-offset: 2px;
 }
 
-/* ==========================================================================
-   PORTADA / HERO
-   ========================================================================== */
 .portada {
     padding: 3rem 1.25rem;
     max-width: 1100px;
@@ -191,9 +177,6 @@ img {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* ==========================================================================
-   ESTRUCTURA DE SECCIONES GENERALES
-   ========================================================================== */
 .seccion {
     padding: 3.5rem 1.25rem;
     max-width: 1100px;
@@ -218,7 +201,6 @@ img {
     font-size: 0.95rem;
 }
 
-/* Tarjetas reutilizables */
 .tarjeta {
     background-color: var(--color-blanco);
     border: 1px solid var(--color-borde);
@@ -228,9 +210,6 @@ img {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* ==========================================================================
-   SECCIÓN SOBRE MÍ
-   ========================================================================== */
 .sobre-mi-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -305,9 +284,6 @@ img {
     background-color: var(--color-secundario);
 }
 
-/* ==========================================================================
-   SECCIÓN PROYECTOS DESTACADOS (AL MENOS 4 PROYECTOS CON CAPTURA)
-   ========================================================================== */
 .proyectos-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -400,9 +376,6 @@ img {
     margin-top: 0.5rem;
 }
 
-/* ==========================================================================
-   BOTONES
-   ========================================================================== */
 .boton {
     display: inline-block;
     padding: 0.6rem 1.2rem;
@@ -466,9 +439,6 @@ img {
     border-color: #111417;
 }
 
-/* ==========================================================================
-   SECCIÓN TODOS LOS RETOS (CUADRÍCULA COMPLETA)
-   ========================================================================== */
 .contenedor-tarjetas {
     display: grid;
     grid-template-columns: 1fr;
@@ -527,9 +497,6 @@ img {
     font-size: 0.82rem;
 }
 
-/* ==========================================================================
-   SECCIÓN CONTACTO
-   ========================================================================== */
 .contacto-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -583,7 +550,6 @@ img {
     display: block;
 }
 
-/* Formulario de contacto */
 .formulario-contacto {
     padding: 2rem 1.5rem;
     display: flex;
@@ -640,9 +606,6 @@ img {
     width: 100%;
 }
 
-/* ==========================================================================
-   PIE DE PÁGINA (FOOTER)
-   ========================================================================== */
 .pie-pagina {
     background-color: #1a1a1a;
     color: #d1d5db;
@@ -678,11 +641,6 @@ img {
     color: var(--color-acento);
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (MEDIA QUERIES - MOBILE FIRST)
-   ========================================================================== */
-
-/* Tablets / Pantallas medianas (>= 650px) */
 @media (min-width: 650px) {
     .portada-contenido h1 {
         font-size: 2.3rem;
@@ -705,7 +663,6 @@ img {
     }
 }
 
-/* Pantallas grandes y de escritorio (>= 850px) */
 @media (min-width: 850px) {
     .encabezado {
         flex-direction: row;
@@ -742,7 +699,6 @@ img {
     }
 }
 
-/* Pantallas extra anchas (>= 1100px) */
 @media (min-width: 1100px) {
     .seccion {
         padding: 4rem 0;
