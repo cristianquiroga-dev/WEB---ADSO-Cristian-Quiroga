@@ -6,28 +6,23 @@
     <title>Barber Sto Domingo | Barbería y Cuidado Masculino</title>
     <meta name="description" content="Barber Sto Domingo: Tu barbería de confianza. Cortes modernos, perfilado de barba a navaja y productos premium con la mejor atención en Bogotá.">
 
-    <!-- Open Graph (5 etiquetas requeridas) -->
     <meta property="og:title" content="Barber Sto Domingo | Barbería y Cuidado Masculino">
     <meta property="og:description" content="El mejor estilo y cuidado para tu cabello y barba en manos de verdaderos expertos. Conoce nuestros servicios y agenda tu cita por WhatsApp.">
     <meta property="og:image" content="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion11/Reto/img/pelu.jpg">
     <meta property="og:url" content="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion11/Reto/">
     <meta property="og:type" content="website">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/barber.png">
     <link rel="shortcut icon" href="img/barber.png" type="image/x-icon">
 
-    <!-- Tipografía Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- 1. Encabezado sticky que permanece visible al hacer scroll -->
     <header class="encabezado">
         <div class="logo">
             <img src="img/barber.png" alt="Logotipo de Barber Sto Domingo" class="logo-img" width="36" height="36" loading="lazy">
@@ -43,7 +38,6 @@
     </header>
 
     <main>
-        <!-- Portada / Hero -->
         <section class="portada" id="inicio">
             <div class="portada-contenido">
                 <h1>Barber Sto Domingo</h1>
@@ -58,11 +52,9 @@
             </div>
         </section>
 
-        <!-- Sección de Beneficios con Insignias (absolute dentro de relative) -->
         <section class="beneficios" id="beneficios">
             <h2>Nuestros Beneficios</h2>
             <div class="beneficios-grid">
-                <!-- Tarjeta 1 con insignia -->
                 <article class="beneficio-tarjeta">
                     <span class="tarjeta-insignia">Popular</span>
                     <div class="tarjeta-icono">
@@ -72,7 +64,6 @@
                     <p>Diseñamos tu corte y barba teniendo en cuenta tus facciones y preferencias personales.</p>
                 </article>
 
-                <!-- Tarjeta 2 con insignia -->
                 <article class="beneficio-tarjeta">
                     <span class="tarjeta-insignia">Destacado</span>
                     <div class="tarjeta-icono">
@@ -82,7 +73,6 @@
                     <p>Equipo capacitado en técnicas modernas de degradado, corte clásico y perfilado a navaja.</p>
                 </article>
 
-                <!-- Tarjeta 3 -->
                 <article class="beneficio-tarjeta">
                     <div class="tarjeta-icono">
                         <img src="https://img.icons8.com/?size=100&id=103936&format=png&color=000000" alt="Icono productos premium" width="35" height="35" loading="lazy">
@@ -91,7 +81,6 @@
                     <p>Aplicamos ceras, aceites y lociones de las mejores marcas para proteger tu piel y cabello.</p>
                 </article>
 
-                <!-- Tarjeta 4 -->
                 <article class="beneficio-tarjeta">
                     <div class="tarjeta-icono">
                         <img src="https://img.icons8.com/?size=100&id=9bDZV4BhyICJ&format=png&color=000000" alt="Icono higiene garantizada" width="35" height="35" loading="lazy">
@@ -100,7 +89,6 @@
                     <p>Herramientas desinfectadas y esterilizadas rigurosamente antes de cada atención.</p>
                 </article>
 
-                <!-- Tarjeta 5 -->
                 <article class="beneficio-tarjeta">
                     <div class="tarjeta-icono">
                         <img src="https://img.icons8.com/?size=100&id=111277&format=png&color=000000" alt="Icono ambiente confortable" width="35" height="35" loading="lazy">
@@ -109,7 +97,6 @@
                     <p>Disfruta de cómodas instalaciones con buena música, Wi-Fi gratis y bebidas de cortesía.</p>
                 </article>
 
-                <!-- Tarjeta 6 -->
                 <article class="beneficio-tarjeta">
                     <div class="tarjeta-icono">
                         <img src="https://img.icons8.com/?size=100&id=ZlKxtkYiDpN0&format=png&color=000000" alt="Icono puntualidad en turnos" width="35" height="35" loading="lazy">
@@ -120,7 +107,6 @@
             </div>
         </section>
 
-        <!-- Sección Cómo pedir -->
         <section class="como-pedir" id="como-pedir">
             <h2>Cómo pedir tu turno</h2>
             <ol class="pasos-lista">
@@ -146,7 +132,6 @@
             </div>
         </section>
 
-        <!-- 4. Ventana modal con :target, fondo oscuro, botón de cerrar y por encima de todo -->
         <div id="promo" class="modal" role="dialog" aria-modal="true" aria-labelledby="promo-titulo">
             <div class="modal-caja">
                 <a href="#como-pedir" class="modal-cerrar" aria-label="Cerrar ventana modal">&times;</a>
@@ -160,13 +145,11 @@
             </div>
         </div>
 
-        <!-- 2. Botón flotante de WhatsApp con position: fixed, aria-label y que no tapa información en celular -->
         <a href="https://wa.me/573147283828" class="whatsapp-flotante" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
             <img src="img/icons8-whatsapp.gif" alt="WhatsApp" width="36" height="36" loading="lazy">
         </a>
     </main>
 
-    <!-- Pie de página / Contacto -->
     <footer class="pie-pagina" id="contacto">
         <div class="contacto-datos">
             <h3>Barber Sto Domingo</h3>
