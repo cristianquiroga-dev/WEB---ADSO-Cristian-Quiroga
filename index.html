@@ -3,106 +3,453 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Cristian Quiroga</title>
-    <!-- Importación de la tipografía Poppins -->
+    <title>Portafolio | Cristian Quiroga - Desarrollador ADSO</title>
+    <meta name="description" content="Portafolio web de Cristian Quiroga, aprendiz de Análisis y Desarrollo de Software (ADSO) en el SENA. Proyectos y retos de maquetación HTML5 semántica, Flexbox, CSS Grid y diseño responsivo Mobile First.">
+
+    <!-- Open Graph (Paso 6 de la guía) -->
+    <meta property="og:title" content="Portafolio | Cristian Quiroga - Desarrollador ADSO">
+    <meta property="og:description" content="Portafolio web de Cristian Quiroga, aprendiz de Análisis y Desarrollo de Software (ADSO) en el SENA. Proyectos y retos de maquetación HTML5 semántica, Flexbox, CSS Grid y diseño responsivo Mobile First.">
+    <meta property="og:image" content="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/img/foto.JPG">
+    <meta property="og:url" content="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/barber.png">
+    <link rel="shortcut icon" href="img/barber.png" type="image/x-icon">
+
+    <!-- Tipografía Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Cabecera principal o tarjeta de perfil -->
-    <header class="perfil-header">
-        <div class="tarjeta-reto tarjeta-perfil">
-            <div class="avatar-perfil"></div>
-            <h1 id="nombre">Cristian Quiroga</h1>
-            <p class="rol">Desarrollador ADSO</p>
-            <p class="nombre-reto">"Todo lo que piensas lo puedes programar"</p>
-            
-            <ul class="habilidades-perfil">
-                <li>Python Basico</li>
-                <li>Base de datos SQL</li>
-                <li>JavaScript</li>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>GitHub</li>
-            </ul>
+    <!-- Encabezado con menú fijo -->
+    <header class="encabezado">
+        <div class="logo">
+            <span class="logo-icono">👨🏾‍💻</span>
+            <span class="logo-texto">Cristian Quiroga</span>
         </div>
+        <nav class="menu" aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#retos">Todos los Retos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
     </header>
 
-    <!-- Contenedor que agrupa las tarjetas de los retos de forma horizontal -->
-    <main class="contenedor-tarjetas">
-        
-        <!-- Tarjeta Sesión 1 -->
-        <section class="tarjeta-reto">
-            <h2>Sesión 1</h2>
-            <p class="nombre-reto">Primer acercamiento y estructura básica</p>
-            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/sesion01/Reto/" class="boton" target="_blank">Ver Reto 1</a>
+    <main>
+        <!-- 1. Portada -->
+        <section id="inicio" class="portada">
+            <div class="portada-contenido">
+                <span class="insignia-saludo">👋 Hola, bienvenido a mi portafolio</span>
+                <h1 id="nombre">Cristian Andrés Quiroga</h1>
+                <p class="rol">Desarrollador de Software · Aprendiz SENA ADSO</p>
+                <p class="lema">«Todo lo que piensas lo puedes programar»</p>
+                <p class="descripcion-portada">
+                    Apasionado por la tecnología, la creación de interfaces web modernas y el desarrollo de software limpio, accesible y responsivo.
+                </p>
+                <div class="portada-botones">
+                    <a href="#proyectos" class="boton boton-primario">Ver Proyectos</a>
+                    <a href="#contacto" class="boton boton-secundario">Contáctame</a>
+                </div>
+            </div>
+            <div class="portada-imagen">
+                <img src="img/foto.JPG" alt="Fotografía de Cristian Quiroga" class="foto-perfil" width="230" height="230" loading="lazy">
+            </div>
         </section>
 
-        <!-- Tarjeta Sesión 2 -->
-        <section class="tarjeta-reto">
-            <h2>Sesión 2</h2>
-            <p class="nombre-reto">Selectores y primeras propiedades visuales</p>
-            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion02/Reto/" class="boton" target="_blank">Ver Reto 2</a>
+        <!-- 2. Sobre mí -->
+        <section id="sobre-mi" class="seccion seccion-sobre-mi">
+            <header class="seccion-encabezado">
+                <h2>Sobre mí</h2>
+                <p class="seccion-subtitulo">Conoce mi perfil profesional, formación y competencias técnicas</p>
+            </header>
+
+            <div class="sobre-mi-grid">
+                <!-- Tarjeta Perfil y Formación -->
+                <article class="tarjeta tarjeta-info">
+                    <div class="bloque-info">
+                        <h3>Perfil Profesional</h3>
+                        <p>
+                            Persona responsable, comprometida y con disposición para aprender y adquirir nuevos conocimientos. Me caracterizo por mi capacidad de adaptación, trabajo en equipo y orientación al cumplimiento de objetivos. Cuento con experiencia en atención al cliente y fidelización, además de gran interés y dedicación en el área de tecnología y desarrollo de software.
+                        </p>
+                    </div>
+
+                    <div class="bloque-info">
+                        <h3>Formación Académica</h3>
+                        <ul class="lista-formacion">
+                            <li>
+                                <strong>SENA - Análisis y Desarrollo de Software (ADSO):</strong>
+                                Formación tecnológica orientada al desarrollo de aplicaciones, programación, bases de datos y tecnologías web.
+                            </li>
+                            <li>
+                                <strong>Universidad de Antioquia:</strong>
+                                Cursados 4 semestres en Ingeniería en Telecomunicaciones.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Tarjeta Habilidades -->
+                <article class="tarjeta tarjeta-info">
+                    <div class="bloque-info">
+                        <h3>Habilidades Técnicas</h3>
+                        <ul class="habilidades-lista">
+                            <li>HTML5 Semántico</li>
+                            <li>CSS3 &amp; Mobile First</li>
+                            <li>Flexbox</li>
+                            <li>CSS Grid</li>
+                            <li>JavaScript</li>
+                            <li>Python Básico</li>
+                            <li>Bases de Datos SQL</li>
+                            <li>Git &amp; GitHub</li>
+                        </ul>
+                    </div>
+
+                    <div class="bloque-info">
+                        <h3>Habilidades Blandas</h3>
+                        <ul class="habilidades-lista habilidades-blandas">
+                            <li>Atención al Cliente</li>
+                            <li>Comunicación Asertiva</li>
+                            <li>Trabajo en Equipo</li>
+                            <li>Resolución de Problemas</li>
+                            <li>Adaptabilidad y Aprendizaje Continuo</li>
+                        </ul>
+                    </div>
+
+                    <div class="bloque-info">
+                        <h3>Ubicación</h3>
+                        <p>📍 Medellín, Antioquia - Colombia</p>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <!-- Tarjeta Sesión 3 -->
-        <section class="tarjeta-reto">
-            <h2>Sesión 3</h2>
-            <p class="nombre-reto">Modelos de caja, padding y margin</p>
-            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion03/Reto/" class="boton" target="_blank">Ver Reto 3</a>
+        <!-- 3. Proyectos Destacados (Al menos 4 proyectos con captura, Ver y Código) -->
+        <section id="proyectos" class="seccion seccion-proyectos">
+            <header class="seccion-encabezado">
+                <h2>Proyectos Destacados</h2>
+                <p class="seccion-subtitulo">Selección de mis mejores retos desarrollados con tecnologías web fundamentales</p>
+            </header>
+
+            <div class="proyectos-grid">
+                <!-- Proyecto 1: Sesión 11 Landing Page -->
+                <article class="tarjeta tarjeta-proyecto">
+                    <div class="proyecto-imagen-contenedor">
+                        <img src="img/reto11-barber.jpg" alt="Captura del proyecto Barber Sto Domingo" class="captura-img" loading="lazy">
+                        <span class="insignia-sesion">Sesión 11 · Reto</span>
+                    </div>
+                    <div class="proyecto-cuerpo">
+                        <h3>Barber Sto Domingo · Landing Page</h3>
+                        <p class="proyecto-descripcion">
+                            Landing page moderna y comercial para una barbería. Integra barra de navegación fija (sticky), catálogo de servicios, ventana modal interactiva para promociones mediante el selector <code>:target</code>, botón flotante de WhatsApp y diseño totalmente responsivo Mobile First.
+                        </p>
+                        <div class="tecnologias-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Sticky Nav</span>
+                            <span>Modal :target</span>
+                            <span>Mobile First</span>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion11/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                            <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion11/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2: Sesión 07 Tablero de Control -->
+                <article class="tarjeta tarjeta-proyecto">
+                    <div class="proyecto-imagen-contenedor">
+                        <img src="img/reto07-tablero.jpg" alt="Captura del proyecto Tablero de Control Aroma Café" class="captura-img" loading="lazy">
+                        <span class="insignia-sesion">Sesión 07 · Reto</span>
+                    </div>
+                    <div class="proyecto-cuerpo">
+                        <h3>Aroma Café · Tablero de Control</h3>
+                        <p class="proyecto-descripcion">
+                            Panel administrativo tipo Dashboard para cafetería de especialidad maquetado con CSS Grid. Presenta indicadores clave de rendimiento (KPIs), métricas visuales con barras de progreso, listado de productos más vendidos y tabla de inventario en tiempo real.
+                        </p>
+                        <div class="tecnologias-tags">
+                            <span>HTML5 Semántico</span>
+                            <span>CSS Grid</span>
+                            <span>Dashboard</span>
+                            <span>Componentes UI</span>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion07/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                            <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion07/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3: Sesión 06 Vitrina Comercial -->
+                <article class="tarjeta tarjeta-proyecto">
+                    <div class="proyecto-imagen-contenedor">
+                        <img src="img/reto06-vitrina.jpg" alt="Captura del proyecto Vitrina de Productos Aroma Café" class="captura-img" loading="lazy">
+                        <span class="insignia-sesion">Sesión 06 · Reto</span>
+                    </div>
+                    <div class="proyecto-cuerpo">
+                        <h3>Aroma Café · Vitrina de Productos</h3>
+                        <p class="proyecto-descripcion">
+                            Catálogo comercial y vitrina de productos gourmet desarrollado mediante Flexbox. Incluye tarjetas de productos con insignias de categoría, precios destacados, efectos visuales de interacción al pasar el cursor y maquetación fluida.
+                        </p>
+                        <div class="tecnologias-tags">
+                            <span>HTML5</span>
+                            <span>Flexbox</span>
+                            <span>Catálogo</span>
+                            <span>Efectos Hover</span>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion06/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                            <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion06/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4: Sesión 05 Formulario SENA -->
+                <article class="tarjeta tarjeta-proyecto">
+                    <div class="proyecto-imagen-contenedor">
+                        <img src="img/reto05-sena.jpg" alt="Captura del proyecto Formulario de Inscripción SENA" class="captura-img" loading="lazy">
+                        <span class="insignia-sesion">Sesión 05 · Reto</span>
+                    </div>
+                    <div class="proyecto-cuerpo">
+                        <h3>Formulario de Inscripción SENA</h3>
+                        <p class="proyecto-descripcion">
+                            Formulario web semántico y accesible para admisiones formativas. Cuenta con validaciones nativas de HTML5, expresiones regulares (patrones para teléfono y documento), agrupación estructurada con fieldsets y diseño limpio con experiencia de usuario intuitiva.
+                        </p>
+                        <div class="tecnologias-tags">
+                            <span>HTML5 Semántico</span>
+                            <span>Formularios</span>
+                            <span>Validaciones Regex</span>
+                            <span>Accesibilidad</span>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion05/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                            <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion05/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <!-- Tarjeta Sesión 4 -->
-        <section class="tarjeta-reto">
-            <h2>Sesión 4</h2>
-            <p class="nombre-reto">Diseños estructurados y componentes</p>
-            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion04/Reto/" class="boton" target="_blank">Ver Reto 4</a>
+        <!-- 4. Cuadrícula de Todos los Retos de Sesión -->
+        <section id="retos" class="seccion seccion-todos-retos">
+            <header class="seccion-encabezado">
+                <h2>Todos los Retos del Curso</h2>
+                <p class="seccion-subtitulo">Registro completo y cronológico de todas las prácticas y retos evaluados</p>
+            </header>
+
+            <div class="contenedor-tarjetas">
+                <!-- Sesión 1 -->
+                <article class="tarjeta-reto">
+                    <span class="numero-sesion">Sesión 01</span>
+                    <h3>Estructura HTML5 Básica</h3>
+                    <p class="nombre-reto">Primer acercamiento a etiquetas semánticas y hoja de vida inicial.</p>
+                    <div class="reto-acciones">
+                        <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/sesion01/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                        <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/sesion01/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                    </div>
+                </article>
+
+                <!-- Sesión 2 -->
+                <article class="tarjeta-reto">
+                    <span class="numero-sesion">Sesión 02</span>
+                    <h3>Selectores y Estilos</h3>
+                    <p class="nombre-reto">Primeros estilos CSS, enlaces, selectores y propiedades visuales.</p>
+                    <div class="reto-acciones">
+                        <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion02/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                        <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion02/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                    </div>
+                </article>
+
+                <!-- Sesión 3 -->
+                <article class="tarjeta-reto">
+                    <span class="numero-sesion">Sesión 03</span>
+                    <h3>Modelo de Caja</h3>
+                    <p class="nombre-reto">Dominio de padding, margin, bordes y tipografías externas.</p>
+                    <div class="reto-acciones">
+                        <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion03/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                        <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion03/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                    </div>
+                </article>
+
+                <!-- Sesión 4 -->
+                <article class="tarjeta-reto">
+                    <span class="numero-sesion">Sesión 04</span>
+                    <h3>Tarjeta de Perfil</h3>
+                    <p class="nombre-reto">Diseños estructurados, componentes y variables visuales.</p>
+                    <div class="reto-acciones">
+                        <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion04/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                        <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion04/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                    </div>
+                </article>
+
+                <!-- Sesión 5 -->
+                <article class="tarjeta-reto">
+                    <span class="numero-sesion">Sesión 05</span>
+                    <h3>Formulario de Admisión</h3>
+                    <p class="nombre-reto">Formularios semánticos con validaciones HTML5 nativas.</p>
+                    <div class="reto-acciones">
+                        <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion05/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                        <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion05/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                    </div>
+                </article>
+
+                <!-- Sesión 6 -->
+                <article class="tarjeta-reto">
+                    <span class="numero-sesion">Sesión 06</span>
+                    <h3>Vitrina con Flexbox</h3>
+                    <p class="nombre-reto">Distribución unidimensional flexible de productos comerciales.</p>
+                    <div class="reto-acciones">
+                        <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion06/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                        <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion06/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                    </div>
+                </article>
+
+                <!-- Sesión 7 -->
+                <article class="tarjeta-reto">
+                    <span class="numero-sesion">Sesión 07</span>
+                    <h3>Dashboard con CSS Grid</h3>
+                    <p class="nombre-reto">Tablero de control bidimensional con áreas y métricas.</p>
+                    <div class="reto-acciones">
+                        <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion07/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                        <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion07/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                    </div>
+                </article>
+
+                <!-- Sesión 8 -->
+                <article class="tarjeta-reto">
+                    <span class="numero-sesion">Sesión 08</span>
+                    <h3>Mobile First &amp; Media Queries</h3>
+                    <p class="nombre-reto">Diseño responsivo adaptado de móvil a pantallas de escritorio.</p>
+                    <div class="reto-acciones">
+                        <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion08/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                        <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion08/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                    </div>
+                </article>
+
+                <!-- Sesión 10 -->
+                <article class="tarjeta-reto">
+                    <span class="numero-sesion">Sesión 10</span>
+                    <h3>Kit de Diseño CSS</h3>
+                    <p class="nombre-reto">Guía de estilos, tokens de color y estados de componentes.</p>
+                    <div class="reto-acciones">
+                        <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion10/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                        <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion10/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                    </div>
+                </article>
+
+                <!-- Sesión 11 -->
+                <article class="tarjeta-reto">
+                    <span class="numero-sesion">Sesión 11</span>
+                    <h3>Landing Page Completa</h3>
+                    <p class="nombre-reto">Posicionamiento sticky, botón flotante, modal y Open Graph.</p>
+                    <div class="reto-acciones">
+                        <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion11/Reto/" class="boton boton-ver" target="_blank" rel="noopener noreferrer">Ver</a>
+                        <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga/tree/main/Sesion11/Reto" class="boton boton-codigo" target="_blank" rel="noopener noreferrer">Código</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <!-- Tarjeta Sesión 5 -->
-        <section class="tarjeta-reto">
-            <h2>Sesión 5</h2>
-            <p class="nombre-reto">Formulario de inscripcion SENA</p>
-            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion05/Reto/" class="boton" target="_blank">Ver Reto 5</a>
-        </section>
+        <!-- 5. Contacto -->
+        <section id="contacto" class="seccion seccion-contacto">
+            <header class="seccion-encabezado">
+                <h2>Contacto</h2>
+                <p class="seccion-subtitulo">¿Tienes alguna pregunta, propuesta o deseas colaborar? Escríbeme</p>
+            </header>
 
-        <!-- Tarjeta Sesión 6 -->
-        <section class="tarjeta-reto">
-            <h2>Sesión 6</h2>
-            <p class="nombre-reto">Vitrina de productos con Flexbox</p>
-            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion06/Reto/" class="boton" target="_blank">Ver Reto 6</a>
-        </section>
+            <div class="contacto-grid">
+                <!-- Información de contacto directa -->
+                <div class="contacto-info">
+                    <div class="tarjeta contacto-item">
+                        <span class="contacto-icono">💬</span>
+                        <div class="contacto-texto">
+                            <h3>WhatsApp / Celular</h3>
+                            <p>+57 314 728 3828</p>
+                            <a href="https://wa.me/573147283828" class="contacto-enlace" target="_blank" rel="noopener noreferrer">Enviar mensaje por WhatsApp &rarr;</a>
+                        </div>
+                    </div>
 
-        <!-- Tarjeta Sesión 7 -->
-        <section class="tarjeta-reto">
-            <h2>Sesión 7</h2>
-            <p class="nombre-reto">Tablero de control y galería con CSS Grid</p>
-            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion07/Reto/" class="boton" target="_blank">Ver Reto 7</a>
-        </section>
+                    <div class="tarjeta contacto-item">
+                        <span class="contacto-icono">✉️</span>
+                        <div class="contacto-texto">
+                            <h3>Correo Electrónico</h3>
+                            <p>cristianandresquiroga06@gmail.com</p>
+                            <a href="mailto:cristianandresquiroga06@gmail.com" class="contacto-enlace">Escribir un correo &rarr;</a>
+                        </div>
+                    </div>
 
-        <!-- Tarjeta Sesión 8 -->
-        <section class="tarjeta-reto">
-            <h2>Sesión 8</h2>
-            <p class="nombre-reto">Diseño responsivo Mobile First con Grid y Media Queries</p>
-            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion08/Reto/" class="boton" target="_blank">Ver Reto 8</a>
-        </section>
+                    <div class="tarjeta contacto-item">
+                        <span class="contacto-icono">💻</span>
+                        <div class="contacto-texto">
+                            <h3>GitHub</h3>
+                            <p>cristianquiroga-dev</p>
+                            <a href="https://github.com/cristianquiroga-dev" class="contacto-enlace" target="_blank" rel="noopener noreferrer">Visitar perfil de GitHub &rarr;</a>
+                        </div>
+                    </div>
 
-        <!-- Tarjeta Sesión 10 -->
-        <section class="tarjeta-reto">
-            <h2>Sesión 10</h2>
-            <p class="nombre-reto">Kit de diseño CSS y estados de componentes</p>
-            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion10/Reto/" class="boton" target="_blank">Ver Reto 10</a>
-        </section>
+                    <div class="tarjeta contacto-item">
+                        <span class="contacto-icono">📍</span>
+                        <div class="contacto-texto">
+                            <h3>Ubicación</h3>
+                            <p>Medellín, Antioquia - Colombia</p>
+                            <span class="contacto-nota">Disponible para proyectos y formación</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Tarjeta Sesión 11 -->
-        <section class="tarjeta-reto">
-            <h2>Sesión 11</h2>
-            <p class="nombre-reto">Landing page con posicionamiento, elementos fijos y modal</p>
-            <a href="https://cristianquiroga-dev.github.io/WEB---ADSO-Cristian-Quiroga/Sesion11/Reto/" class="boton" target="_blank">Ver Reto 11</a>
+                <!-- Formulario de contacto semántico -->
+                <div class="contacto-formulario-contenedor">
+                    <form action="#" method="get" class="tarjeta formulario-contacto">
+                        <h3>Envíame un mensaje</h3>
+                        <p class="form-descripcion">Completa el formulario para ponerte en comunicación directa.</p>
+
+                        <div class="campo">
+                            <label for="nombre-contacto">Nombre completo</label>
+                            <input type="text" id="nombre-contacto" name="nombre" required placeholder="Tu nombre y apellido">
+                        </div>
+
+                        <div class="campo">
+                            <label for="correo-contacto">Correo electrónico</label>
+                            <input type="email" id="correo-contacto" name="correo" required placeholder="tucorreo@ejemplo.com">
+                        </div>
+
+                        <div class="campo">
+                            <label for="asunto-contacto">Asunto</label>
+                            <input type="text" id="asunto-contacto" name="asunto" required placeholder="Asunto de tu mensaje">
+                        </div>
+
+                        <div class="campo">
+                            <label for="mensaje-contacto">Mensaje</label>
+                            <textarea id="mensaje-contacto" name="mensaje" rows="4" required placeholder="Describe tu mensaje o propuesta..."></textarea>
+                        </div>
+
+                        <button type="submit" class="boton boton-primario boton-enviar">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <p class="copyright">
+            &copy; 2026 Cristian Quiroga · Tecnólogo en Análisis y Desarrollo de Software (ADSO) · SENA
+        </p>
+        <div class="pie-enlaces">
+            <a href="https://github.com/cristianquiroga-dev/WEB---ADSO-Cristian-Quiroga" target="_blank" rel="noopener noreferrer">Repositorio GitHub</a>
+            <span>·</span>
+            <a href="https://www.sena.edu.co/" target="_blank" rel="noopener noreferrer">Sitio Web SENA</a>
+            <span>·</span>
+            <a href="#inicio">Volver arriba ↑</a>
+        </div>
+    </footer>
+
 </body>
 </html>
