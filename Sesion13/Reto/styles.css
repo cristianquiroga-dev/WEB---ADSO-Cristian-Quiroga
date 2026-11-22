@@ -1,0 +1,72 @@
+/* ========================================================
+   ESTILOS DE MARCA - BARBER STO DOMINGO
+   Ajustes de identidad visual y colores de marca.
+   Todo el maquetado y responsividad usa Bootstrap 5.
+   ======================================================== */
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    color: #222222;
+}
+
+/* 6. Colores de la marca con variables de Bootstrap (--bs-btn-...) */
+.btn-primary {
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: #6a1616;
+    --bs-btn-border-color: #6a1616;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #521111;
+    --bs-btn-hover-border-color: #450e0e;
+    --bs-btn-focus-shadow-rgb: 106, 22, 22;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #450e0e;
+    --bs-btn-active-border-color: #3b0c0c;
+    --bs-btn-disabled-color: #ffffff;
+    --bs-btn-disabled-bg: #6a1616;
+    --bs-btn-disabled-border-color: #6a1616;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #6a1616;
+    --bs-btn-border-color: #6a1616;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #6a1616;
+    --bs-btn-hover-border-color: #6a1616;
+    --bs-btn-focus-shadow-rgb: 106, 22, 22;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #521111;
+    --bs-btn-active-border-color: #521111;
+    --bs-btn-disabled-color: #6a1616;
+    --bs-btn-disabled-border-color: #6a1616;
+}
+
+/* Ajustes de marca para los campos del formulario al hacer foco */
+.form-control:focus,
+.form-select:focus {
+    border-color: #6a1616;
+    box-shadow: 0 0 0 0.25rem rgba(106, 22, 22, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: #6a1616;
+    border-color: #6a1616;
+}
+
+.form-check-input:focus {
+    border-color: #6a1616;
+    box-shadow: 0 0 0 0.25rem rgba(106, 22, 22, 0.25);
+}
+
+/* 7. Clases de apoyo con colores de marca */
+.text-marca {
+    color: #6a1616 !important;
+}
+
+.bg-marca {
+    background-color: #6a1616 !important;
+    color: #ffffff;
+}
+
+.border-marca {
+    border-color: #6a1616 !important;
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Sto Domingo | Barbería y Cuidado Masculino</title>
+    <meta name="description" content="Barber Sto Domingo: Barbería profesional con cortes modernos, perfilado de barba a navaja y productos premium en Bogotá.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Barber Sto Domingo | Barbería y Cuidado Masculino">
+    <meta property="og:description" content="El mejor estilo y cuidado para tu cabello y barba, en manos de verdaderos expertos.">
+    <meta property="og:image" content="img/pelu.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/barber.png">
+    <link rel="shortcut icon" href="img/barber.png" type="image/x-icon">
+
+    <!-- 1. Bootstrap 5 CSS por CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- styles.css propio después de Bootstrap -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+
+    <!-- 2. Barra de navegación (navbar) que se colapsa en el celular -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#inicio">
+                <img src="img/barber.png" alt="Logo de Barber Sto Domingo" width="34" height="34" class="d-inline-block">
+                <span>Barber Sto Domingo</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beneficios">Beneficios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#como-pedir">Cómo pedir</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <div class="text-center ms-lg-3 my-2 my-lg-0">
+                    <a href="#contacto" class="btn btn-primary px-3 py-2 fw-semibold">Agendar Cita</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 3. Portada con row y dos columnas (col-12 col-md-6): texto e imagen -->
+        <header class="py-5 bg-white border-bottom" id="inicio">
+            <div class="container py-lg-4">
+                <div class="row align-items-center gy-4">
+                    <div class="col-12 col-md-6 text-center text-md-start">
+                        <span class="badge text-bg-dark mb-3 px-3 py-2 text-uppercase fw-semibold">Estilo &amp; Cuidado Masculino</span>
+                        <h1 class="display-5 fw-bold text-dark mb-3">Barber Sto Domingo</h1>
+                        <p class="lead text-secondary mb-4">
+                            El mejor estilo y cuidado para tu cabello y barba, en manos de verdaderos expertos. Cortes modernos, afeitado tradicional a navaja y asesoría personalizada.
+                        </p>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+                            <a href="https://wa.me/573147283828" class="btn btn-primary btn-lg fw-semibold" target="_blank" rel="noopener noreferrer">
+                                Agendar por WhatsApp
+                            </a>
+                            <a href="#beneficios" class="btn btn-outline-primary btn-lg fw-semibold">
+                                Ver Beneficios
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="img/pelu.jpg" alt="Instalaciones y atención en Barber Sto Domingo" class="img-fluid rounded-4 shadow-sm w-100">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 4. Beneficios en tarjetas (card) que pasan de 1 a 2 y a 3 columnas -->
+        <section class="py-5 bg-light" id="beneficios">
+            <div class="container py-lg-3">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-dark mb-2">Nuestros Beneficios</h2>
+                    <p class="text-secondary mb-0">Por qué nuestros clientes nos eligen día a día</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Tarjeta 1: col-12 en celular, col-md-6 en tablet, col-lg-4 en pantallas grandes -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 border-top border-4 border-marca">
+                            <div class="card-body p-4">
+                                <h3 class="card-title h5 fw-bold text-marca mb-3">Asesoría de Imagen</h3>
+                                <p class="card-text text-secondary mb-0">
+                                    Diseñamos tu corte y barba teniendo en cuenta tus facciones y preferencias personales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 border-top border-4 border-marca">
+                            <div class="card-body p-4">
+                                <h3 class="card-title h5 fw-bold text-marca mb-3">Barberos Profesionales</h3>
+                                <p class="card-text text-secondary mb-0">
+                                    Equipo capacitado en técnicas modernas de degradado, corte clásico y perfilado a navaja.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 border-top border-4 border-marca">
+                            <div class="card-body p-4">
+                                <h3 class="card-title h5 fw-bold text-marca mb-3">Productos Premium</h3>
+                                <p class="card-text text-secondary mb-0">
+                                    Aplicamos ceras, aceites y lociones de las mejores marcas para proteger tu piel y cabello.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 border-top border-4 border-marca">
+                            <div class="card-body p-4">
+                                <h3 class="card-title h5 fw-bold text-marca mb-3">Higiene Garantizada</h3>
+                                <p class="card-text text-secondary mb-0">
+                                    Herramientas desinfectadas y esterilizadas rigurosamente antes de cada atención.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 border-top border-4 border-marca">
+                            <div class="card-body p-4">
+                                <h3 class="card-title h5 fw-bold text-marca mb-3">Ambiente Confortable</h3>
+                                <p class="card-text text-secondary mb-0">
+                                    Disfruta de cómodas instalaciones con buena música, Wi-Fi gratis y bebidas de cortesía.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 6 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 border-top border-4 border-marca">
+                            <div class="card-body p-4">
+                                <h3 class="card-title h5 fw-bold text-marca mb-3">Puntualidad en Turnos</h3>
+                                <p class="card-text text-secondary mb-0">
+                                    Respaldamos tu tiempo gestionando cada cita con puntualidad y sin largas esperas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Cómo pedir -->
+        <section class="py-5 bg-white border-top border-bottom" id="como-pedir">
+            <div class="container py-lg-3">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-dark mb-2">Cómo pedir tu turno</h2>
+                    <p class="text-secondary mb-0">Sigue estos 4 sencillos pasos para renovar tu imagen</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="p-4 bg-light rounded-3 text-center h-100 shadow-sm border">
+                            <span class="badge bg-marca rounded-circle fs-6 p-3 mb-3">1</span>
+                            <h3 class="h6 fw-bold text-dark mb-2">Elige tu servicio</h3>
+                            <p class="small text-secondary mb-0">Corte tradicional, arreglo de barba, cejas o el combo completo.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="p-4 bg-light rounded-3 text-center h-100 shadow-sm border">
+                            <span class="badge bg-marca rounded-circle fs-6 p-3 mb-3">2</span>
+                            <h3 class="h6 fw-bold text-dark mb-2">Elige fecha y hora</h3>
+                            <p class="small text-secondary mb-0">Atendemos de domingo a domingo en horario continuo de 10:00 AM a 8:00 PM.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="p-4 bg-light rounded-3 text-center h-100 shadow-sm border">
+                            <span class="badge bg-marca rounded-circle fs-6 p-3 mb-3">3</span>
+                            <h3 class="h6 fw-bold text-dark mb-2">Escríbenos</h3>
+                            <p class="small text-secondary mb-0">Envía tus datos por el formulario o directo al WhatsApp para confirmar.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="p-4 bg-light rounded-3 text-center h-100 shadow-sm border">
+                            <span class="badge bg-marca rounded-circle fs-6 p-3 mb-3">4</span>
+                            <h3 class="h6 fw-bold text-dark mb-2">Asiste a tu cita</h3>
+                            <p class="small text-secondary mb-0">Visítanos en la Calle 80 # 45-12 y disfruta de la mejor experiencia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Formulario de contacto con form-label y form-control, con validación -->
+        <section class="py-5 bg-light" id="contacto">
+            <div class="container py-lg-4">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-dark mb-2">Contacto &amp; Reservas</h2>
+                    <p class="text-secondary mb-0">Agenda tu cita o déjanos un mensaje y te responderemos a la brevedad</p>
+                </div>
+
+                <div class="row g-4 align-items-start">
+                    <!-- Información de contacto -->
+                    <div class="col-12 col-lg-5">
+                        <div class="card border-0 shadow-sm bg-dark text-white p-4 h-100">
+                            <h3 class="h4 fw-bold text-white mb-3">Barber Sto Domingo</h3>
+                            <p class="text-white-50 mb-4">
+                                Te esperamos en nuestras cómodas instalaciones con la mejor atención de la ciudad.
+                            </p>
+
+                            <div class="mb-3">
+                                <h4 class="h6 text-uppercase text-white-50 mb-1">📍 Dirección</h4>
+                                <p class="fw-semibold text-white mb-0">Calle 80 # 45-12, Bogotá</p>
+                            </div>
+
+                            <div class="mb-3">
+                                <h4 class="h6 text-uppercase text-white-50 mb-1">📞 Teléfono / WhatsApp</h4>
+                                <p class="fw-semibold text-white mb-0">+57 314 728 3828</p>
+                            </div>
+
+                            <div class="mb-3">
+                                <h4 class="h6 text-uppercase text-white-50 mb-1">🕒 Horario de Atención</h4>
+                                <p class="fw-semibold text-white mb-0">Domingo a Domingo: 10:00 AM – 8:00 PM</p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="h6 text-uppercase text-white-50 mb-1">✉️ Correo</h4>
+                                <p class="fw-semibold text-white mb-0">contacto@barberstodomingo.com</p>
+                            </div>
+
+                            <div class="mt-auto">
+                                <a href="https://wa.me/573147283828" class="btn btn-outline-light w-100 py-2 fw-semibold" target="_blank" rel="noopener noreferrer">
+                                    Escribir directamente al WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de contacto con validación -->
+                    <div class="col-12 col-lg-7">
+                        <div class="card border-0 shadow-sm p-4 p-md-5 bg-white">
+                            <h3 class="h4 fw-bold text-dark mb-4">Formulario de Reserva</h3>
+
+                            <form class="needs-validation" novalidate id="formularioReserva">
+                                <div class="row g-3">
+                                    <!-- Campo Nombre -->
+                                    <div class="col-12 col-sm-6">
+                                        <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
+                                        <input type="text" class="form-control" id="nombre" placeholder="Ej. Juan Pérez" required>
+                                        <div class="invalid-feedback">
+                                            Por favor escribe tu nombre completo.
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Teléfono -->
+                                    <div class="col-12 col-sm-6">
+                                        <label for="telefono" class="form-label fw-semibold">Teléfono / WhatsApp</label>
+                                        <input type="tel" class="form-control" id="telefono" placeholder="Ej. 3141234567" required>
+                                        <div class="invalid-feedback">
+                                            Por favor escribe un número de teléfono válido.
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Correo -->
+                                    <div class="col-12">
+                                        <label for="correo" class="form-label fw-semibold">Correo electrónico</label>
+                                        <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required>
+                                        <div class="invalid-feedback">
+                                            Por favor escribe un correo electrónico válido.
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Servicio -->
+                                    <div class="col-12 col-sm-6">
+                                        <label for="servicio" class="form-label fw-semibold">Servicio deseado</label>
+                                        <select class="form-select" id="servicio" required>
+                                            <option value="" selected disabled>Selecciona un servicio...</option>
+                                            <option value="corte">Corte Tradicional / Degradado</option>
+                                            <option value="barba">Arreglo y Perfilado de Barba</option>
+                                            <option value="combo">Combo Corte + Barba</option>
+                                            <option value="asesoria">Asesoría de Imagen Completa</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Por favor selecciona un servicio.
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Fecha y Hora -->
+                                    <div class="col-12 col-sm-6">
+                                        <label for="fecha" class="form-label fw-semibold">Fecha y hora preferida</label>
+                                        <input type="datetime-local" class="form-control" id="fecha" required>
+                                        <div class="invalid-feedback">
+                                            Por favor selecciona una fecha y hora para tu turno.
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Mensaje -->
+                                    <div class="col-12">
+                                        <label for="mensaje" class="form-label fw-semibold">Mensaje o comentarios (opcional)</label>
+                                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Indícanos si tienes alguna preferencia especial"></textarea>
+                                    </div>
+
+                                    <!-- Checkbox Términos -->
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="terminos" required>
+                                            <label class="form-check-label text-secondary small" for="terminos">
+                                                Acepto los términos y el uso de mis datos para la gestión del turno.
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                Debes aceptar los términos antes de enviar.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Botón Enviar (sin botón azul) -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">
+                                            Confirmar Solicitud de Cita
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white-50 py-4 border-top border-secondary">
+        <div class="container text-center">
+            <p class="mb-1 text-white fw-semibold">Barber Sto Domingo</p>
+            <p class="small text-white-50 mb-0">&copy; 2026 Barber Sto Domingo · ADSO · Cristian Quiroga</p>
+        </div>
+    </footer>
+
+    <!-- 1. Bootstrap 5 JS al final del body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Script de validación oficial de Bootstrap -->
+    <script>
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+</html>
