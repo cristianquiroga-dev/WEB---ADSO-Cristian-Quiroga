@@ -1,20 +1,5 @@
 body {
     font-family: "Poppins", Arial, sans-serif;
-    color: #222222;
-    background-color: #f8f9fa;
-}
-
-.bg-marca {
-    background-color: #6a1616 !important;
-    color: #ffffff;
-}
-
-.text-marca {
-    color: #6a1616 !important;
-}
-
-.border-marca {
-    border-color: #6a1616 !important;
 }
 
 .btn-marca {
@@ -25,31 +10,5 @@ body {
 
 .btn-marca:hover {
     background-color: #521111;
-    border-color: #450e0e;
     color: #ffffff;
-}
-
-.tarjeta-captura {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.tarjeta-captura:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12) !important;
-}
-
-.tabla-comparativa thead th {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.tabla-comparativa tbody tr:hover {
-    background-color: #f8f9fa;
-}
-
-.insignia-ganador {
-    font-size: 0.8rem;
-    padding: 0.35rem 0.6rem;
-    border-radius: 4px;
 }
