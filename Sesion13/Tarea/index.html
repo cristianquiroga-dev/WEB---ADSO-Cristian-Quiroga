@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comparativa: Sesión 08 vs Sesión 13 | Cristian Quiroga</title>
-    <meta name="description" content="Comparativa técnica entre la landing Barber Sto Domingo con CSS puro (Sesión 08) y Bootstrap 5 (Sesión 13). Capturas de Lighthouse, tabla de criterios y conclusión final.">
+    <meta name="description" content="Comparativa técnica entre la landing Barber Sto Domingo con CSS puro (Sesión 08) y Bootstrap 5 (Sesión 13). Capturas reales de Lighthouse, tabla de criterios y conclusión final.">
 
     <link rel="icon" type="image/png" href="../Reto/img/barber.png">
     <link rel="shortcut icon" href="../Reto/img/barber.png" type="image/x-icon">
@@ -37,7 +37,7 @@
             <span class="badge bg-dark px-3 py-2 text-uppercase mb-3">Análisis Comparativo · Sesión 13</span>
             <h1 class="display-6 fw-bold text-dark mb-3">CSS Puro vs Bootstrap 5</h1>
             <p class="lead text-secondary mx-auto mb-4" style="max-width: 800px;">
-                Evaluación técnica de la landing <strong>Barber Sto Domingo</strong>: versión con CSS nativo (Sesión 08) frente a la versión con Bootstrap 5 (Sesión 13). Capturas reales, tabla de criterios y conclusión final.
+                Evaluación técnica de la landing <strong>Barber Sto Domingo</strong>: versión con CSS nativo (Sesión 08) frente a la versión con Bootstrap 5 (Sesión 13). Capturas reales de Lighthouse en modo incógnito, tabla de 6 criterios y conclusión final.
             </p>
             <div class="d-flex justify-content-center gap-2 flex-wrap">
                 <a href="#capturas" class="btn btn-outline-secondary btn-sm">1. Capturas Lighthouse</a>
@@ -52,10 +52,10 @@
         <section id="capturas" class="mb-5">
             <div class="d-flex align-items-center gap-2 mb-2">
                 <span class="badge bg-marca fs-6 px-3 py-2">1</span>
-                <h2 class="h3 fw-bold text-dark mb-0">Capturas en modo incógnito (Lighthouse)</h2>
+                <h2 class="h3 fw-bold text-dark mb-0">Capturas reales de Lighthouse (modo incógnito)</h2>
             </div>
             <p class="text-secondary mb-4">
-                Capturas de pantalla tomadas sobre los despliegues reales en GitHub Pages ejecutando Lighthouse en modo incógnito, sin extensiones, para medir rendimiento, accesibilidad, buenas prácticas y SEO.
+                Auditorías ejecutadas desde Chrome DevTools → Lighthouse sobre los despliegues en GitHub Pages, en pestaña de incógnito sin extensiones activas.
             </p>
 
             <div class="row g-4">
@@ -71,19 +71,19 @@
                             </div>
                         </div>
                         <div class="card-body p-3">
-                            <img src="img/lighthouse-sesion08.png" alt="Captura de la landing Sesión 08 ejecutada en Lighthouse modo incógnito" class="img-fluid rounded border w-100">
+                            <img src="img/lighthouse-sesion08.jpg" alt="Captura real de Lighthouse para Sesión 08 CSS Puro: Performance 74, Accessibility 92, Best Practices 100, SEO 91" class="img-fluid rounded border w-100">
                         </div>
                         <div class="card-footer bg-white border-top">
                             <div class="row text-center g-2 mb-3">
                                 <div class="col-3">
                                     <div class="p-2 border rounded bg-light">
-                                        <div class="fw-bold text-success fs-5">99</div>
+                                        <div class="fw-bold text-warning fs-5">74</div>
                                         <small class="text-muted" style="font-size:0.72rem;">Rendimiento</small>
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="p-2 border rounded bg-light">
-                                        <div class="fw-bold text-success fs-5">94</div>
+                                        <div class="fw-bold text-success fs-5">92</div>
                                         <small class="text-muted" style="font-size:0.72rem;">Accesibilidad</small>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@
                                 </div>
                                 <div class="col-3">
                                     <div class="p-2 border rounded bg-light">
-                                        <div class="fw-bold text-warning-emphasis fs-5">92</div>
+                                        <div class="fw-bold text-success fs-5">91</div>
                                         <small class="text-muted" style="font-size:0.72rem;">SEO</small>
                                     </div>
                                 </div>
@@ -117,19 +117,19 @@
                             </div>
                         </div>
                         <div class="card-body p-3">
-                            <img src="img/lighthouse-sesion13.png" alt="Captura de la landing Sesión 13 ejecutada en Lighthouse modo incógnito" class="img-fluid rounded border w-100">
+                            <img src="img/lighthouse-sesion13.jpg" alt="Captura real de Lighthouse para Sesión 13 Bootstrap 5: Performance 75, Accessibility 95, Best Practices 100, SEO 100" class="img-fluid rounded border w-100">
                         </div>
                         <div class="card-footer bg-white border-top">
                             <div class="row text-center g-2 mb-3">
                                 <div class="col-3">
                                     <div class="p-2 border rounded bg-light">
-                                        <div class="fw-bold text-success fs-5">94</div>
+                                        <div class="fw-bold text-warning fs-5">75</div>
                                         <small class="text-muted" style="font-size:0.72rem;">Rendimiento</small>
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <div class="p-2 border rounded bg-light">
-                                        <div class="fw-bold text-success fs-5">98</div>
+                                        <div class="fw-bold text-success fs-5">95</div>
                                         <small class="text-muted" style="font-size:0.72rem;">Accesibilidad</small>
                                     </div>
                                 </div>
@@ -159,7 +159,7 @@
                 <h2 class="h3 fw-bold text-dark mb-0">Tabla Comparativa</h2>
             </div>
             <p class="text-secondary mb-4">
-                Comparación por 6 criterios técnicos y de experiencia de desarrollo.
+                Comparación por 6 criterios técnicos y de experiencia de desarrollo, con datos reales medidos en ambas versiones.
             </p>
 
             <div class="table-responsive shadow-sm rounded-3">
@@ -176,33 +176,47 @@
                         <tr>
                             <td class="fw-semibold">1. Rendimiento (Lighthouse)</td>
                             <td>
-                                <strong class="text-success">99/100</strong>
-                                <p class="small text-secondary mb-0">Sin librerías externas, el navegador descarga solo CSS propio (~12 KB). FCP en 0.8 s.</p>
+                                <strong class="text-warning">74 / 100</strong>
+                                <p class="small text-secondary mb-0">Sin librerías externas, el CSS propio es liviano. Aun así la imagen grande de la portada afecta el LCP.</p>
                             </td>
                             <td>
-                                <strong class="text-success">94/100</strong>
-                                <p class="small text-secondary mb-0">Descarga Bootstrap CSS (~25 KB) + bundle JS (~80 KB) desde CDN. FCP en 1.1 s.</p>
+                                <strong class="text-warning">75 / 100</strong>
+                                <p class="small text-secondary mb-0">Descarga Bootstrap CSS + JS desde CDN. El punto extra se recupera gracias a la carga diferida y mejor estructura semántica.</p>
                             </td>
                             <td class="text-center">
-                                <span class="badge bg-success-subtle text-success border border-success-subtle insignia-ganador">Sesión 08 ✓</span>
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle insignia-ganador">Bootstrap ✓ (+1)</span>
                             </td>
                         </tr>
                         <tr>
-                            <td class="fw-semibold">2. Líneas de CSS escritas</td>
+                            <td class="fw-semibold">2. Accesibilidad (Lighthouse)</td>
+                            <td>
+                                <strong class="text-success">92 / 100</strong>
+                                <p class="small text-secondary mb-0">Buen resultado, pero algunos controles de navegación carecen de atributos ARIA explícitos.</p>
+                            </td>
+                            <td>
+                                <strong class="text-success">95 / 100</strong>
+                                <p class="small text-secondary mb-0">Los componentes de Bootstrap incluyen atributos ARIA integrados: <code>aria-expanded</code>, <code>aria-controls</code>, roles correctos.</p>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle insignia-ganador">Bootstrap ✓ (+3)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">3. Líneas de CSS escritas</td>
                             <td>
                                 <strong>300 líneas</strong>
                                 <p class="small text-secondary mb-0">Resets manuales, flexbox, cuadrícula CSS Grid, 2 bloques de media queries y todos los estados hover.</p>
                             </td>
                             <td>
                                 <strong class="text-success">58 líneas (-81%)</strong>
-                                <p class="small text-secondary mb-0">Solo variables de marca (<code>--bs-btn-*</code>) y colores de foco. El layout es 100% utilidades de Bootstrap.</p>
+                                <p class="small text-secondary mb-0">Solo variables de marca (<code>--bs-btn-*</code>) y colores de foco. El layout completo usa clases utilitarias de Bootstrap.</p>
                             </td>
                             <td class="text-center">
                                 <span class="badge bg-primary-subtle text-primary border border-primary-subtle insignia-ganador">Bootstrap ✓</span>
                             </td>
                         </tr>
                         <tr>
-                            <td class="fw-semibold">3. Tiempo que tomó</td>
+                            <td class="fw-semibold">4. Tiempo que tomó</td>
                             <td>
                                 <strong>~3 a 4 horas</strong>
                                 <p class="small text-secondary mb-0">Calcular márgenes, depurar alineaciones y redactar media queries tomó la mayor parte del tiempo.</p>
@@ -216,20 +230,6 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="fw-semibold">4. Facilidad para hacerla responsive</td>
-                            <td>
-                                <strong>Media</strong>
-                                <p class="small text-secondary mb-0">Se necesitaron dos bloques <code>@media</code> explícitos (768 px y 1024 px) para manejar columnas y flex-direction.</p>
-                            </td>
-                            <td>
-                                <strong class="text-success">Muy fácil</strong>
-                                <p class="small text-secondary mb-0"><code>col-12 col-md-6 col-lg-4</code> resuelve 1→2→3 columnas automáticamente sin escribir una sola media query.</p>
-                            </td>
-                            <td class="text-center">
-                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle insignia-ganador">Bootstrap ✓</span>
-                            </td>
-                        </tr>
-                        <tr>
                             <td class="fw-semibold">5. Qué tan única se ve</td>
                             <td>
                                 <strong class="text-success">100% original</strong>
@@ -237,21 +237,21 @@
                             </td>
                             <td>
                                 <strong>Estándar Bootstrap</strong>
-                                <p class="small text-secondary mb-0">El acabado es limpio y profesional, pero reconocible. Para diferenciarse se requiere personalización adicional.</p>
+                                <p class="small text-secondary mb-0">Acabado limpio y profesional, pero reconocible. Para diferenciarse aún más se requiere personalización adicional.</p>
                             </td>
                             <td class="text-center">
                                 <span class="badge bg-success-subtle text-success border border-success-subtle insignia-ganador">Sesión 08 ✓</span>
                             </td>
                         </tr>
                         <tr>
-                            <td class="fw-semibold">6. Formulario con validación</td>
+                            <td class="fw-semibold">6. Facilidad para hacerla responsive</td>
                             <td>
-                                <strong>Ausente</strong>
-                                <p class="small text-secondary mb-0">La versión original solo tiene un botón de enlace a WhatsApp. No hay formulario ni validación de datos.</p>
+                                <strong>Media</strong>
+                                <p class="small text-secondary mb-0">Se necesitaron dos bloques <code>@media</code> explícitos (768 px y 1024 px) para manejar columnas y flex-direction.</p>
                             </td>
                             <td>
-                                <strong class="text-success">Completo y accesible</strong>
-                                <p class="small text-secondary mb-0"><code>needs-validation</code>, <code>invalid-feedback</code> y atributos ARIA integrados en un único formulario de 6 campos.</p>
+                                <strong class="text-success">Muy fácil</strong>
+                                <p class="small text-secondary mb-0"><code>col-12 col-md-6 col-lg-4</code> resuelve 1→2→3 columnas automáticamente sin escribir una sola media query.</p>
                             </td>
                             <td class="text-center">
                                 <span class="badge bg-primary-subtle text-primary border border-primary-subtle insignia-ganador">Bootstrap ✓</span>
@@ -288,14 +288,14 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="border rounded-3 p-3 h-100 bg-light">
-                                <h4 class="h6 fw-bold mb-2">👥 Trabajo colaborativo</h4>
-                                <p class="small text-secondary mb-0">La nomenclatura de Bootstrap (<code>container</code>, <code>row</code>, <code>col-md-6</code>) es un estándar conocido. Cualquier compañero entiende la estructura sin leer la documentación de un kit personalizado.</p>
+                                <h4 class="h6 fw-bold mb-2">♿ Mejor accesibilidad</h4>
+                                <p class="small text-secondary mb-0">Los datos lo confirman: Bootstrap obtuvo 95 de accesibilidad vs 92 del CSS propio. Los componentes incluyen atributos ARIA probados en múltiples navegadores y lectores de pantalla.</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="border rounded-3 p-3 h-100 bg-light">
-                                <h4 class="h6 fw-bold mb-2">♿ Accesibilidad incluida</h4>
-                                <p class="small text-secondary mb-0">Los componentes de Bootstrap incorporan atributos ARIA y foco visible probados en múltiples navegadores y lectores de pantalla, cumpliendo estándares WCAG sin esfuerzo extra.</p>
+                                <h4 class="h6 fw-bold mb-2">📱 Responsive sin esfuerzo</h4>
+                                <p class="small text-secondary mb-0">La cuadrícula de 12 columnas maneja automáticamente todos los breakpoints. No fue necesario escribir ningún <code>@media</code> propio para que la página funcionara en móvil, tablet y escritorio.</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
@@ -307,7 +307,7 @@
                     </div>
 
                     <div class="alert border-0 bg-dark text-white mb-0">
-                        <strong>Conclusión final:</strong> Bootstrap 5 + variables CSS de marca propia es la combinación óptima para el proyecto final de ADSO. Se obtiene la solidez de un framework probado en producción, la velocidad de desarrollo que necesita el curso, y la identidad visual diferenciada que requiere cualquier producto de software profesional.
+                        <strong>Conclusión final:</strong> Los datos reales de Lighthouse confirman que Bootstrap 5 iguala o supera al CSS puro en rendimiento (75 vs 74), accesibilidad (95 vs 92), SEO (100 vs 91) y buenas prácticas (100 vs 100), mientras reduce el tiempo de desarrollo en más del 80%. Para el proyecto final de ADSO, Bootstrap 5 con variables CSS de marca propia es la elección óptima.
                     </div>
                 </div>
             </div>
